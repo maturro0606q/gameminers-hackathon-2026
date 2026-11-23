@@ -23,8 +23,11 @@ Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/T
 El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
 
 
-## Licencias separadas del proyecto (propuesta)
+## Licencias diferenciadas
 
-El código original de GameMiners se distribuye bajo licencia MIT (archivo LICENSE). **No debe interpretarse que MIT concede derechos sobre modelos 3D, ilustraciones, rigs, texturas o animaciones originales de Cami**: sus derechos permanecen reservados y sus archivos privados no se publican en este repositorio sin autorización expresa. La música y efectos externos conservan su licencia individual (preferimos CC0, o CC BY con la atribución requerida). Un ejecutable puede combinar contenidos bajo licencias diferentes, siempre que existan permisos para su distribución.
+- **Código original:** licencia MIT (archivo LICENSE).
+- **Arte original de Cami:** modelos y otros recursos exportados pueden ser públicos **con crédito a su autora y derechos reservados**, únicamente después de su autorización por archivo. Los demás no adquieren un permiso general para reutilizarlos. Ver docs/ART_CREDITS.md y docs/LICENSING_POLICY.md.
+- **Archivos fuente del arte:** .blend y bocetos privados por defecto, salvo autorización expresa.
+- **Música externa:** piezas CC0 de OpenGameArt documentadas en docs/AUDIO_LICENSES.md y docs/AUDIO_IMPLEMENTATION.md, acreditadas por decisión del equipo.
 
-Consultar [política propuesta](docs/LICENSING_POLICY.md), [música candidata](docs/MUSIC_SHORTLIST.md) y [permiso artístico pendiente](docs/ART_PERMISSION_DRAFT.md). Estos documentos no constituyen autorización de Cami ni sustituyen la verificación de las bases del evento.
+La autorización de Cami para obras concretas y la compatibilidad del licenciamiento mixto con las bases de la hackatón siguen pendientes de confirmar.
