@@ -1,52 +1,64 @@
-# GameMiners — Política de licencias y derechos (propuesta)
-> V0.3 · 23/11/2026 · No definitiva hasta confirmación del equipo y de Cami.
+# GameMiners — Política de derechos y licencias (acuerdo de trabajo)
+> Actualizado 23/11/2026. Aplicable al desarrollo de **La heladería maldita**. Registro de autorización de Cami: `docs/ART_USE_PERMISSION.md`.
 
-## 1. Matriz oficial de referencia
-| Tipo de archivo u obra | Titular y régimen | Uso permitido por terceros / destino | Documento |
-| --- | --- | --- | --- |
-| Scripts C# y código original GameMiners | Sus autores/contribuyentes; **MIT** | Copia, modificación, distribución, uso comercial según MIT con preservación del aviso | `/LICENSE` |
-| Modelos originales, FBX, animaciones y texturas de Cami | **© 2026 Cami, derechos reservados** | Archivo visible en GitHub si ella lo autoriza; NO equivale a CC BY ni a permiso general de reutilización independiente | `docs/ART_CREDITS.md` |
-| Fuentes editables (.blend, PSD, bocetos) | Autora identificada | Privados salvo aprobación expresa individual | `docs/ART_PERMISSION_DRAFT.md` |
-| Música y SFX CC0 de terceros | Respectivos autores, declaración CC0 | Distribución permitida conforme a CC0 tras verificar fuente/obra concreta; crédito voluntario por política del equipo | `docs/AUDIO_LICENSES.md` y `docs/THIRD_PARTY_NOTICES.md` |
-| Template URP de Unity y componentes/paquetes de terceros | Unity y autores respectivos | Sus términos específicos (p. ej. Unity Companion License); NO pasan a MIT | `docs/THIRD_PARTY_NOTICES.md` |
-| Marcas/escudos/logos externos, incluido Codex | Titulares de marcas | Solo usos permitidos por guía/permiso; no asumir por estar en un repo MIT | `docs/THIRD_PARTY_NOTICES.md` |
+## 1. Qué está autorizado y bajo qué términos
 
-**La fórmula exacta es «código open source bajo MIT, arte original con derechos reservados, música CC0 y recursos externos según su licencia».** No llamar «videojuego 100% open source» al conjunto si el arte permanece propietario.
+| Componente | Titularidad / condiciones | Alcance |
+| --- | --- | --- |
+| Código original C# de GameMiners | **MIT**, en `LICENSE` | Open source: copiar, estudiar, modificar y redistribuir código conforme a MIT |
+| Arte original creado por Cami | **© 2026 Cami · Todos los derechos reservados**, en `ART_LICENSE.md` | **Autorizado únicamente para este proyecto** GameMiners. No para otros juegos, empresas o proyectos; no se convierte en MIT/CC0/CC BY |
+| FBX, texturas, rigs y materiales de Cami publicados | Mismo copyright del arte | Pueden ser públicos **cuando su publicación para GameMiners haya sido autorizada** y siempre con crédito. La visibilidad no concede reutilización externa |
+| Fuentes artísticas .blend, bocetos y PSD | Cami | Privados salvo permiso expreso de la autora |
+| Música/SFX escogidos por terceros | CC0 cuando lo declara el recurso original y se verifica | Usables en el juego; GameMiners acredita voluntariamente a sus creadores |
+| Unity URP, paquetes, fuentes, otros assets externos | Licencias de sus titulares | No se convierten automáticamente a MIT |
+| Logo/nombre Codex y otras marcas | OpenAI y titulares respectivos | Usos sujetos a directrices y permisos; la licencia del proyecto no los cubre |
 
-## 2. Avisos: dónde aparecen
-- **Raíz:** `LICENSE` MIT original, sin modificar su texto normativo.
-- **Raíz:** `README.md` con un resumen de licencias mixtas y enlaces.
-- **Arte:** `docs/ART_CREDITS.md` con © y nombre de Cami, además de inventario autorizado en `docs/ART_PERMISSION_DRAFT.md` cuando se complete.
-- **Pantalla del juego:** `docs/CREDITS_IN_GAME.md` como guion de créditos de Matías, Nacho, Cami y autores musicales.
-- **Terceros:** `docs/THIRD_PARTY_NOTICES.md` como registro por archivo, con licencia y URL original.
-- **Audio:** `docs/AUDIO_LICENSES.md` como mapa exacto de pistas elegidas y créditos musicales.
+**Forma correcta de describir la entrega:** «Código abierto MIT, arte original de Cami con derechos reservados y permiso de uso exclusivo para este videojuego, música de terceros CC0 y recursos de terceros conforme a sus licencias». El juego completo **no** está licenciado íntegramente bajo MIT.
 
-## 3. Autorización artística y alcance
-- Cami conserva los derechos de su arte; publicar con créditos no se entiende como licencia CC BY 4.0. CC BY requeriría que ella acepte permitir reutilización y uso comercial por terceros.
-- Su aprobación debe cubrir **publicación de archivos**, **integración técnica**, **distribución de builds**, **capturas/videos** y, si aplica, **posibilidad de clonar/ejecutar el proyecto con arte incluido**. No tratar el simple upload de un FBX como acuerdo de explotación del juego.
-- Mantener identificación y evidencia de consentimiento en registro privado. Para obras concretas previamente aprobadas en PR de arte, conservar el alcance de esa aprobación; no presumir permiso general para futuras obras.
-- Reutilizaciones externas y una eventual venta del videojuego requieren revisar permisos y la titularidad.
-- GitHub permite visualizar/forkear contenido de repositorios públicos conforme a sus términos; un aviso de derechos reservados no lo hace confidencial ni elimina tales permisos de plataforma.
-- Confirmar con organizadores qué significa el requisito «open source»: código MIT solamente o juego íntegro con assets reutilizables.
+## 2. Autorización de Cami: resolución recibida
+Matías informó al equipo el **23/11/2026**: **«Cami dijo que podían usar su arte solo para este proyecto»**. Se toma como acuerdo operativo para el desarrollo y presentación de La heladería maldita, con crédito a Cami y derechos reservados. Su consentimiento fue comunicado por un integrante; **no se afirma que exista contrato firmado ni se inventan derechos adicionales**.
 
-## 4. Música y créditos
-- Pistas elegidas: tienda Ice Cream Truck Theme; helados Magic Puzzle In-Game 1; Jety Boss Battle Music; final Spooky Waltz.
-- Cada archivo: autor real según ficha, título, licencia, URL original, versión/nombre de archivo, fecha y transformaciones (p. ej. WAV→OGG). Conservar prueba de licencia al momento de descarga.
-- CC0 no exige atribución como condición de copyright; **GameMiners la dará voluntariamente**. Sin embargo, CC0 no concede derechos de marca, imagen ni otras titularidades ajenas.
-- No atribuir a GameMiners la propiedad de música CC0 de terceros.
+**Dentro de este proyecto:** integración técnica de assets entregados para él; montaje en Unity, optimización, rigging/animación y uso en la presentación de hackatón; publicación de exportaciones concretas ya aprobadas en sus PR artísticos.
 
-## 5. Marca Codex y referencias culturales
-- El nombre/logo de Codex no se licencia por MIT/CC0. Las guías de OpenAI desaconsejan integrar sus logos como marca propia. El letrero de heladería previsto debe revisarse/autorizarse con organizadores o reemplazarse con una marca original, pudiendo mencionar la herramienta en créditos descriptivos. https://openai.com/brand/
-- El conejo se inspira en lenguaje general de títeres, sin copiar personajes, marcas, voces ni música de 31 Minutos.
-- Ninguna imagen, personaje, canción o modelo externo se incorpora por mero hallazgo en internet.
+**No concedido:** reutilizar en otros proyectos, vender assets por separado, publicar source editable no autorizado, conceder una licencia abierta a terceros, secuelas ni comercialización general no discutida.
 
-## 6. Checklist para entregar
-- [ ] La titularidad del código/contribuciones y © del LICENSE están correctamente representados.
-- [ ] El equipo valida compatibilidad con las bases de la hackatón.
-- [ ] Cami acepta el listado de FBX públicos y el alcance del permiso para la build/jurado.
-- [ ] Se define si terceros pueden clonar/ejecutar la fuente con assets propietarios o se ofrecen placeholders.
-- [ ] No hay originales .blend / bocetos privados en ramas públicas sin autorización.
-- [ ] Cada música/efecto real tiene licencia y URL registradas.
-- [ ] Los créditos dentro de Unity coinciden con los archivos realmente usados.
-- [ ] Se comprueba el logo de Codex o se sustituye por marca original.
-- [ ] La distribución final incluye LICENSE y avisos de terceros.
+**No resuelto por la frase «solo para este proyecto»:** autorización detallada de sublicencias externas, distribución comercial futura y términos específicos exigidos por un marketplace. Pedir consentimiento explícito si surgen; esto no bloquea el desarrollo de esta hackatón.
+
+Ver `ART_LICENSE.md`, `docs/ART_CREDITS.md` y `docs/ART_USE_PERMISSION.md`. El antiguo `docs/ART_PERMISSION_DRAFT.md` queda como material histórico y NO reemplaza la autorización comunicada.
+
+## 3. ¿Qué puede hacer quien clona el repositorio?
+- El código original está sujeto a MIT.
+- Los archivos artísticos públicos **pueden verse y forkease mediante las funcionalidades de GitHub**, de acuerdo con sus términos; esto no concede al público permiso para extraer los personajes y llevarlos a otro videojuego.
+- La facultad de compilar una copia y redistribuir un **juego con los assets privados de terceros** no equivale a permiso de comercializar o relicenciar el arte. Antes de invitar formalmente a terceros a publicar builds derivados, precisar esa autorización.
+- Si las bases de la hackatón exigen **todo** el juego bajo licencia OSI/open source (incluidos assets), deberá aclararse con los organizadores. «Código abierto» no implica que el arte tenga que ser abierto, pero tampoco satisface automáticamente una exigencia que se refiera a **todo** el proyecto.
+
+## 4. Documentos que deben acompañar la entrega
+- `LICENSE` — MIT estándar, **mantener intacto**.
+- `ART_LICENSE.md` — derechos reservados sobre arte original de Cami.
+- `README.md` — tabla/resumen y links de derechos.
+- `docs/ART_USE_PERMISSION.md` — alcance del permiso comunicado y PRs de arte.
+- `docs/ART_CREDITS.md` — aviso artístico.
+- `docs/CREDITS_IN_GAME.md` — créditos mostrados en Unity.
+- `docs/AUDIO_LICENSES.md` y `docs/THIRD_PARTY_NOTICES.md` — autores, archivos, fuentes y licencias externas.
+- `docs/UNITY_TEMPLATE_LICENSE.md` de PR #2 — aviso de plantilla de Unity, cuando se fusione.
+
+## 5. Créditos acordados
+**Matías:** coordinación, arquitectura funcional, interfaz UX/UI e integración. **Nacho:** gameplay, mecánicas y escenas. **Cami:** dirección artística, personajes, modelado y animaciones. Los créditos exactos deben corresponder a las contribuciones integradas, sin atribuir recursos ajenos.
+
+**Música seleccionada**: tienda — Ice Cream Truck Theme (Cleyton Kauffman); helados pequeños y grandes — Magic Puzzle In-Game 1 (MintoDog); Jety — Boss Battle Music (Juhani Junkala / publicación SubspaceAudio, confirmar denominación exacta); trono — Spooky Waltz (Aureolus_Omicron). Todas bajo **CC0 según ficha**; verificar archivo antes de incluirlo y acreditar por cortesía.
+
+## 6. Marcas y referencias culturales
+El logo Codex que se desea mostrar en la heladería es **marca de terceros**. La política de OpenAI no autoriza automáticamente usarlo como marca propia de otra tienda; **no incorporarlo sin autorización aplicable**, aunque se pueda acreditar a Codex como herramienta usada. https://openai.com/brand/
+
+La estética de títeres de 31 Minutos es inspiración general; no copiar personajes, logotipos, voces, sonidos ni música ajena.
+
+## 7. Control antes de distribuir la build
+- [x] Licencia MIT original en raíz.
+- [x] Permiso de uso del arte **solo en GameMiners** registrado según comunicación del equipo.
+- [x] Aviso `ART_LICENSE.md` y créditos por separado.
+- [ ] Verificar que cada FBX incorporado corresponda a un recurso entregado para este juego y autorizado para publicación.
+- [ ] Confirmar los derechos requeridos por las bases de la hackatón y cualquier distribución externa más allá de la presentación.
+- [ ] Verificar el permiso de marca Codex o utilizar cartel original.
+- [ ] Audio y SFX realmente importados tienen registro de autor/licencia.
+- [ ] Crédito mostrado en Unity y probado.
+- [ ] La versión que se entregue incluye los avisos legales y ha sido probada fuera del editor.
