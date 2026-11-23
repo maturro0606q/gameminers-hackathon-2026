@@ -23,3 +23,12 @@ Formato de commits:
 - `fix: corregir integración`
 
 Consulta [la arquitectura](docs/ARCHITECTURE.md) para las rutas de trabajo y [la guía de integración](docs/INTEGRATION.md) para la revisión de cambios.
+
+## Licencias y política artística de GameMiners
+- **Código propio MIT**, texto estándar `LICENSE`. No extenderlo a arte de Cami, audio CC0 u otros materiales.
+- **Permiso de Cami comunicado al equipo:** su arte **puede utilizarse únicamente para este videojuego**, La heladería maldita/GameMiners; autoría y créditos reservados a Cami. Véase `ART_LICENSE.md` y `docs/ART_USE_PERMISSION.md`.
+- Exportaciones artísticas de este proyecto que la autora autorizó pueden subirse públicamente con créditos. No publicar .blend, bocetos ni otros fuentes editables sin autorización expresa.
+- **Nunca** reutilizar modelos en otros proyectos, convertirlos a CC BY/CC0/MIT, sublicenciarlos a terceros o afirmar derechos comerciales futuros sobre ellos.
+- La UI de créditos debe atribuir a Cami los modelos, personajes y animaciones originales de su autoría.
+- Música de terceros: verificar CC0 de cada archivo, guardar procedencia y acreditar creadores (política voluntaria). `docs/AUDIO_LICENSES.md`.
+- El logo de Codex tiene reglas propias de marca; no integrarlo como marca de heladería sin validar permiso conforme a https://openai.com/brand/.

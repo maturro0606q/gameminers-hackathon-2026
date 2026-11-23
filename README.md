@@ -21,3 +21,23 @@ Tecnologías del equipo: Unity Hub y Unity Editor, C#, Git y GitHub, GitHub Desk
 Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/TASKS.md) y [pruebas](docs/TESTING.md).
 
 El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
+
+
+## Licencias, derechos y créditos
+
+**GameMiners tiene licencias separadas según el recurso:**
+
+| Recurso | Condición |
+| --- | --- |
+| Código C# original | **MIT** — [LICENSE](LICENSE), código open source |
+| Arte original de Cami | **© 2026 Cami. Todos los derechos reservados** — uso autorizado **solo para este proyecto**, [ART_LICENSE.md](ART_LICENSE.md) |
+| Exportaciones artísticas aprobadas | Pueden verse/descargarse del repo público **con créditos**, pero no se autoriza reutilización en otros proyectos |
+| Archivos fuente de Cami | Privados salvo autorización expresa |
+| Música y efectos externos | Su licencia individual (piezas elegidas **CC0**); [registro de audio](docs/AUDIO_LICENSES.md) |
+| Recursos de Unity y otras marcas/terceros | Condiciones de los titulares, [avisos de terceros](docs/THIRD_PARTY_NOTICES.md) |
+
+Cami comunicó al equipo que **pueden utilizar su arte únicamente en La heladería maldita**. Sus derechos no se ceden a GameMiners ni se extiende la licencia MIT al arte. Las autorizaciones de publicación de recursos concretos aparecen en los PR artísticos; [registro del alcance](docs/ART_USE_PERMISSION.md).
+
+**Créditos:** [Pantalla del juego](docs/CREDITS_IN_GAME.md) · [Arte](docs/ART_CREDITS.md) · [Avisos de terceros](docs/THIRD_PARTY_NOTICES.md).
+
+**Nota:** el código es abierto, no todos los recursos visuales. Verificar las bases de la hackatón y posibles autorizaciones adicionales antes de una distribución comercial futura.
