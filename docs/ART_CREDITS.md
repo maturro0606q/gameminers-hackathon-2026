@@ -1,31 +1,24 @@
-# GameMiners — Aviso de propiedad y créditos del arte
-> PROPUESTA · 23/11/2026 · Cami debe aprobar la redacción final y las obras cubiertas.
-> Este documento no es una cesión de derechos ni concede por sí solo autorización al equipo.
+# GameMiners — Créditos artísticos y derechos de Cami
+> Actualizado 23/11/2026, a partir de la autorización que Matías comunicó al equipo. Detalle en `docs/ART_USE_PERMISSION.md`.
 
-## Aviso que acompañaría a los assets aprobados
+## Autora
+**Arte original, personajes, dirección artística, modelado 3D y animaciones: Cami.**
+
 **© 2026 Cami. Todos los derechos reservados.**
 
-Arte original del videojuego **La heladería maldita**, desarrollado para GameMiners.
-Diseño de personajes, ilustraciones, modelos 3D, materiales y animaciones originales: **Cami**.
+Cami permitió utilizar su arte **solo en el videojuego La heladería maldita de GameMiners**. Conserva su autoría y derechos; esta autorización no significa que los modelos sean MIT, CC BY o CC0.
 
-Los archivos artísticos que su autora autorice a publicar pueden verse y descargarse en el repositorio público, sujeto a las funcionalidades y condiciones de GitHub. **Su publicación y el crédito no constituyen una licencia abierta (MIT, CC0 o CC BY)** ni conceden permiso general para reutilizar, redistribuir separadamente, modificar o comercializar el arte en proyectos ajenos. Para otros usos, contactar a su titular.
+Los FBX, rigs, materiales y texturas exportados para este proyecto que Cami autorizó publicar pueden formar parte del repositorio público del juego, con crédito a la autora. **No se autoriza reutilizarlos en otros proyectos**, venderlos de forma independiente ni transferir su titularidad a terceros. Sus archivos editables originales se mantienen privados salvo autorización expresa.
 
-La licencia MIT de la raíz cubre el código original, no estos recursos de arte.
+**Importante:** GitHub permite visualizar/forkear repositorios públicos conforme a sus términos. La publicación no garantiza confidencialidad de los modelos ni concede automáticamente derechos de reutilización ajenos a GameMiners.
 
-## Qué publica Cami
-Solo el inventario de exportaciones concretas que apruebe, como:
-- `Assets/Art/Characters/HeladoChico/HeladoChico.fbx` y sus materiales/texturas, una vez aprobado.
-- `Assets/Art/Characters/Protagonista/Protagonista.fbx` y sus materiales/texturas, una vez aprobado.
-- Otros diseños, jefes, armas y props, cada uno tras aprobación.
+## Archivos y permisos
+Ver `docs/ART_USE_PERMISSION.md` para los modelos de cada PR. Aplicar la misma regla a nuevos assets creados específicamente para este juego si se documenta su procedencia y autorización. Los usos futuros ajenos a la hackatón y la publicación comercial del producto pueden necesitar acuerdos adicionales.
 
-Los originales editables como archivos .blend, dibujos o archivos PSD **no se publican por defecto**.
+## Texto para créditos del juego
+**Arte, personajes, modelado 3D y animaciones: Cami.**
 
-## Permiso del equipo y del jurado: pendiente
-Para incorporar arte en builds, permitir pruebas por jueces y publicar el material de la hackatón, se requiere acuerdo de autorización no exclusiva de Cami con alcance, duración y forma de exhibición definidos. El borrador está en `ART_PERMISSION_DRAFT.md`. También deben decidir si se concede un permiso acotado al público para clonar, compilar y jugar al proyecto completo, o si se provee un build y placeholders de libre uso.
+### Límites
+La licencia MIT del código no cubre estos modelos. No incluir marcas de Codex/OpenAI ni recursos de terceros en este aviso de autoría de Cami: se regulan por separado en `docs/THIRD_PARTY_NOTICES.md`.
 
-## Créditos
-- Pantalla de Créditos desde el menú y después del trono: “Arte y dirección artística: Cami”.
-- README e inventario de derechos: nombre de acreditación “Cami”, pendiente de confirmar si desea otro.
-- Antes de un lanzamiento comercial, comprobar cadena de titularidad y permisos de terceros.
-
-No atribuir a Cami recursos que no haya creado, ni incluir marcas/logos de terceros dentro de la reserva de derechos de Cami.
+El crédito público acordado aquí es «Cami»; si la autora solicita otro nombre de acreditación, cambiarlo en README y en el juego, sin publicar información personal innecesaria.
