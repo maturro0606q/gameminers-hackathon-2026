@@ -21,3 +21,10 @@ Tecnologías del equipo: Unity Hub y Unity Editor, C#, Git y GitHub, GitHub Desk
 Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/TASKS.md) y [pruebas](docs/TESTING.md).
 
 El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
+
+
+## Licencias separadas del proyecto (propuesta)
+
+El código original de GameMiners se distribuye bajo licencia MIT (archivo LICENSE). **No debe interpretarse que MIT concede derechos sobre modelos 3D, ilustraciones, rigs, texturas o animaciones originales de Cami**: sus derechos permanecen reservados y sus archivos privados no se publican en este repositorio sin autorización expresa. La música y efectos externos conservan su licencia individual (preferimos CC0, o CC BY con la atribución requerida). Un ejecutable puede combinar contenidos bajo licencias diferentes, siempre que existan permisos para su distribución.
+
+Consultar [política propuesta](docs/LICENSING_POLICY.md), [música candidata](docs/MUSIC_SHORTLIST.md) y [permiso artístico pendiente](docs/ART_PERMISSION_DRAFT.md). Estos documentos no constituyen autorización de Cami ni sustituyen la verificación de las bases del evento.
