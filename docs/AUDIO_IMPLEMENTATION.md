@@ -7,10 +7,10 @@ En M1 usar solamente tres piezas de música: `01_Shop`, `02_IceWorld`, `03_JetyR
 ## Procedimiento de importación y sincronización
 1. Descargar desde los enlaces de `docs/AUDIO_LICENSES.md`:
    - Tienda: ZIP `ice_cream_truck_theme.zip`, extraer **la versión OGG** (comprobar nombre real).
-   - Mundo: `fairy_battles_bpm180.ogg`.
-   - Jety: `hard_boss_battle_1_bpm200.ogg`.
+   - Mundo de helados: **PENDIENTE DE ELECCIÓN** entre las alternativas de `docs/MUSIC_SHORTLIST.md`. No fijar aún `fairy_battles_bpm180.ogg`.
+   - Jety: **Boss Battle Music** de SubspaceAudio / Juhani Junkala, archivo original `Juhani Junkala - Epic Boss Battle [Seamlessly Looping].wav`, según ficha de OpenGameArt. Unity admite WAV; se puede convertir a OGG para reducir tamaño si se conserva atribución y trazabilidad.
 2. Verificar autor, título, licencia CC0 y formato de cada archivo. No usar reinterpretaciones no autorizadas, reuploads o material protegido por licencia diferente.
-3. Copiar los tres `.ogg` a `Assets/Audio/Music/` **dentro del clon del repositorio Unity**. Unity creará `.meta`; incluirlos con los archivos al hacer commit.
+3. Copiar los archivos aprobados (`.ogg` o `.wav`, según corresponda) a `Assets/Audio/Music/` **dentro del clon del repositorio Unity**. Unity creará `.meta`; incluirlos con los archivos al hacer commit.
 4. **No hacer cambios en la escena principal desde la rama audio.** Preparar sonidos, créditos y documentación en una rama pequeña como `feature/audio-m1`. Crear PR y solicitar a Matías/Nacho coordinación de merge.
 5. Tras integrar la carpeta de música, **Nacho**, dueño de escenas, las abre en su rama y añade el componente `AudioSource` a un GameObject `Music` en cada escena, con:
    - `AudioClip` asignado según escena.
@@ -24,8 +24,8 @@ En M1 usar solamente tres piezas de música: `01_Shop`, `02_IceWorld`, `03_JetyR
 
 ## Lista de aceptación
 - [ ] Música tienda suena en POV sin variar por distancia.
-- [ ] Al ir al IceWorld suena Fairy Battles y no se duplica la pista de tienda.
-- [ ] Al entrar a JetyRoom cambia a Hard Boss Battle 1.
+- [ ] Al ir al IceWorld suena la pista de acción **que el equipo elija** y no se duplica la pista de tienda.
+- [ ] Al entrar a JetyRoom cambia a **Boss Battle Music (SubspaceAudio / Juhani Junkala)**.
 - [ ] Al morir/pausar/reiniciar no se acumulan instancias duplicadas.
 - [ ] En final trono se corta o atenúa música de pelea.
 - [ ] Los tres audios aparecen en Git junto con sus .meta.
