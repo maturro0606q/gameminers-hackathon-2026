@@ -1,0 +1,43 @@
+# Salidas y estado local del proyecto Unity en la raíz
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Bb]uild/
+/[Bb]uilds/
+/[Bb]uild[Rr]eports/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/.gradle/
+/.vs/
+/.idea/
+
+# Archivos generados por IDE y por el editor en la raíz
+/*.csproj
+/*.unityproj
+/*.sln
+/*.slnx
+/*.suo
+/*.user
+/*.userprefs
+/*.pidb
+/*.booproj
+/*.svd
+/*.pdb
+/*.mdb
+/sysinfo.txt
+/[Cc]rashlytics-build.properties
+
+# Sistema operativo y secretos locales
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.keystore
+*.jks
+
+# Git debe registrar los .meta de Assets y de paquetes embebidos.
