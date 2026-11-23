@@ -9,6 +9,14 @@
 
 La escena de menú se puede sustituir por bootstrap/panel si el proyecto actual lo hace mejor. No cambiar escena/versión/plantilla sin revisión. `AGENTS.md` conserva prioridad para políticas generales.
 
+### Arquitectura global de cámaras y controles (acuerdo de equipo)
+- `01_Shop`: rig y controlador **primera persona (POV)**. Mouse = mirar; WASD mover; E interactuar.
+- Refrigerador: interacción + captura + transición por fundido/carga. Al llegar a `02_IceWorld`, activar otro modo de control/cámara.
+- `02_IceWorld` y `03_JetyRoom`: **tercera persona 3D lateral elevada / tres cuartos, estilo visual *Fairytale Fights* (2009)**. Protagonista visible; cámara persigue con encuadre estable, sin free-look del mouse. WASD mueve relativo a ejes de cámara en suelo 3D; orientación/ataque hacia dirección del personaje. No asumir movimiento restringido a solo X hasta probarlo.
+- Usar un **controlador de tienda** y un **controlador de combate** independientes; reutilizar sistema mínimo de estado y transiciones. El rig de combate se mantiene entre ambos niveles. No introducir cambio de cámara complejo en tiempo real dentro del combate.
+- Nacho posee rigs, cámaras, controladores y escenas en `Assets/Gameplay/**`. Matías adapta texto de controles, indicaciones y HUD según contexto sin editar escenas ajenas. Cami entrega protagonista con silueta y rig legibles desde vista externa lateral/3-4.
+- Detalles de implementación, pruebas y decisiones abiertas: [ICE_GAME_CAMERA_ARCHITECTURE.md](ICE_GAME_CAMERA_ARCHITECTURE.md).
+
 ## 2. Propiedad de archivos
 | Persona | Dueño / alcance | Evitar |
 | --- | --- | --- |
@@ -48,15 +56,15 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 ### M1 — Recorrido completo con proxies (PRIORIDAD ABSOLUTA)
 **Nacho**
 1. Configurar 4 escenas y navegación.
-2. Jugador POV (movimiento, mirar, interactuar E).
+2. Dos modos: jugador POV en tienda (WASD + mouse + E) y personaje visible en cámara lateral elevada / tres cuartos en niveles de combate (WASD relativo a cámara; sin free-look).
 3. Tienda: atender 2 clientes de forma simplificada, agotar stock, acceder bodega, abrir refrigerador.
-4. Portal por fundido/trigger a mundo de helados.
+4. Portal por fundido/carga: transición visible y comprobable de POV a cámara tercera persona 3D semilateral al entrar en mundo de helados.
 5. Ataque principal simple, enemigos placeholders y vida.
 6. Oleada de prueba: 1 pequeño, 1 grande, 1 jefe helado.
 7. Portal a sala del Jety, combate simple con boss placeholder.
 8. Cinemática mínima de trono y vuelta a menú.
-**Matías**: menú Jugar/Controles, retícula y prompts contextuales, HUD de vida/progreso, boss HP, pantalla derrota, final y botones. Usa prefabs separados.
-**Cami**: proxies artísticos o una referencia de helado y Jety; no bloquear M1 por rigs definitivos. Preparar modelo 3D de pequeño helado o prop según referencias.
+**Matías**: menú Jugar/Controles con instrucciones para **dos esquemas de cámara**, retícula/prompts de tienda y prompts contextuales de combate, HUD vida/progreso, boss HP, derrota, final y botones. Prefabs separados; ocultar retícula FPS en combate si no resulta útil.
+**Cami**: proxies artísticos o una referencia de helado y Jety; no bloquear M1 por rigs definitivos. Preparar modelo 3D de pequeño helado o prop según referencias. Planificar protagonista visible con rig apto para cámara de combate en tercera persona.
 **Criterio:** desde Jugar hasta final, sin usar editor para avanzar de escena; se puede perder/reintentar; al menos un recurso de Cami importado. Compilar versión PC de prueba. No declarar M1 completo si el final no funciona.
 
 ### M2 — Reglas originales de oleadas
@@ -98,7 +106,8 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 | --- | --- |
 | Menú Jugar | Inicia tienda |
 | Atender clientes | Stock llega a cero y permite ir bodega |
-| Refrigerador E | Jety aparece / transición mundo |
+| Refrigerador E | Jety aparece / transición desde POV tienda hacia vista externa lateral 3D |
+| Cámaras por contexto | En tienda FPS con mouse; tras captura vista lateral elevada 3D con protagonista visible; cámara mantiene seguimiento en combate y sala Jety |
 | Mundo primera oleada | Cuenta exactamente 23 pequeños |
 | Mundo segunda oleada | Comienza tras 23, cuenta exactamente 10 |
 | Jefe helado | Aparece tras 10 y abre acceso tras morir |
@@ -112,7 +121,7 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 | Build | Corre fuera del editor en PC o navegador previsto |
 
 ## 7. Lista de pendientes y decisiones
-- Confirmar nombre definitivo, cámara POV todo el juego, cantidad inicial clientes, esquema controles.
+- Confirmar nombre definitivo, cantidad inicial de clientes y esquema preciso de controles. **La separación de cámaras sí está acordada:** tienda en POV; mundo Jety con cámara tercera persona lateral elevada / tres cuartos tipo *Fairytale Fights*. Falta calibrar ángulo y movimiento en profundidad en Unity.
 - Confirmar versión exacta de Unity, plantilla y destino build.
 - Cami: referencia del Jety y siluetas de los tres helados; modelado no debe bloquear M1.
 - Decidir si la recuperación tras muerte reinicia nivel o usa checkpoint de oleada.
