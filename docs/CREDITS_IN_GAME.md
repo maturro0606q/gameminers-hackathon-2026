@@ -20,7 +20,7 @@ Un juego de **GameMiners** · Hackatón 2026
 **Herramientas de desarrollo:** Unity, Blender y OpenAI Codex. Referencia descriptiva, **sin patrocinio ni afiliación oficial declarada**.
 
 **© 2026 GameMiners contributors — código original bajo MIT.**  
-**© 2026 Cami — arte original, todos los derechos reservados**, salvo que la autora autorice otra licencia por escrito.  
+**© 2026 Cami — arte original, todos los derechos reservados. Uso autorizado únicamente para este videojuego GameMiners.**  
 Las licencias de los recursos externos se documentan en el repositorio.
 
 ## Aviso corto opcional en menú/README
