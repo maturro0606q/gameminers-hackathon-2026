@@ -1,5 +1,17 @@
 # Pruebas de colaboración e integración
 
+## Entrega para Windows · 23 de noviembre de 2026
+
+La prueba automatizada del ejecutable de Windows verificó el recorrido desde el menú hasta los créditos del trono. Pasaron los pedidos, el portal, el lanzamiento y la recuperación de la lanza, las tres rejas del valle, el combate del Yeti, la corona, los créditos y la selección de las cuatro pistas por etapa. También se revisaron los marcos de texto en 16:9 y 4:3.
+
+Se extrajo el ZIP de entrega a una carpeta independiente y se comprobó que `GameMiners.exe` abre el menú y carga su música. La compilación y la prueba de Play Mode desde un clon limpio en Unity Hub siguen pendientes.
+
+Archivo probado: `La_Heladeria_Maldita_Creditos_Windows.zip`
+
+SHA-256: `4ed7219d52aceef15689490036420c939f1d10b1243d81c225578f2acee38540`
+
+## Lista de colaboración
+
 Registra el commit probado, la versión exacta de Unity, el sistema operativo, quién realizó la prueba y el resultado. Estado inicial de todas las pruebas: pendiente.
 
 | Prueba | Resultado esperado |
