@@ -2,12 +2,12 @@
 > Plan de trabajo para Nacho (escenas) y Matías (créditos/UI). **No es prueba de compilación**.
 
 ## Principio: mantener el juego jugable
-En M1 usar solamente tres piezas de música: `01_Shop`, `02_IceWorld`, `03_JetyRoom`. Audio del refrigerador y del final se añade después si no retrasa el recorrido completo.
+En M1 usar solamente tres piezas de música: `01_Shop`, `02_IceWorld`, `03_JetyRoom`. Audio del refrigerador y del final se añade después si no retrasa el recorrido completo. Para el trono hay opciones en MUSIC_SHORTLIST.md y no hay pista definitiva asignada.
 
 ## Procedimiento de importación y sincronización
 1. Descargar desde los enlaces de `docs/AUDIO_LICENSES.md`:
    - Tienda: ZIP `ice_cream_truck_theme.zip`, extraer **la versión OGG** (comprobar nombre real).
-   - Mundo de helados: **PENDIENTE DE ELECCIÓN** entre las alternativas de `docs/MUSIC_SHORTLIST.md`. No fijar aún `fairy_battles_bpm180.ogg`.
+   - Mundo de helados: **Magic Puzzle In-Game 1**, MintoDog, CC0. Descargar el archivo OGG **`magic_puzzle_in-game_1_bpm110.ogg`** del enlace registrado. Reutilizar la misma música en las oleadas de helados pequeños y grandes (sin reiniciar la pista entre fases si siguen en la misma escena).
    - Jety: **Boss Battle Music** de SubspaceAudio / Juhani Junkala, archivo original `Juhani Junkala - Epic Boss Battle [Seamlessly Looping].wav`, según ficha de OpenGameArt. Unity admite WAV; se puede convertir a OGG para reducir tamaño si se conserva atribución y trazabilidad.
 2. Verificar autor, título, licencia CC0 y formato de cada archivo. No usar reinterpretaciones no autorizadas, reuploads o material protegido por licencia diferente.
 3. Copiar los archivos aprobados (`.ogg` o `.wav`, según corresponda) a `Assets/Audio/Music/` **dentro del clon del repositorio Unity**. Unity creará `.meta`; incluirlos con los archivos al hacer commit.
@@ -24,7 +24,7 @@ En M1 usar solamente tres piezas de música: `01_Shop`, `02_IceWorld`, `03_JetyR
 
 ## Lista de aceptación
 - [ ] Música tienda suena en POV sin variar por distancia.
-- [ ] Al ir al IceWorld suena la pista de acción **que el equipo elija** y no se duplica la pista de tienda.
+- [ ] Al ir al IceWorld suena **Magic Puzzle In-Game 1** para pequeños y grandes sin cambiar ni duplicar audio entre oleadas.
 - [ ] Al entrar a JetyRoom cambia a **Boss Battle Music (SubspaceAudio / Juhani Junkala)**.
 - [ ] Al morir/pausar/reiniciar no se acumulan instancias duplicadas.
 - [ ] En final trono se corta o atenúa música de pelea.
