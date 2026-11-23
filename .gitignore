@@ -41,3 +41,8 @@ Thumbs.db
 *.jks
 
 # Git debe registrar los .meta de Assets y de paquetes embebidos.
+
+# Modelos, rigs, texturas y dibujos propietarios incorporados solo localmente.
+# IMPORTANTE: ignore no elimina archivos ya versionados ni protege contra git add -f.
+/Assets/Art/ProprietaryLocal/
+/Assets/Art/ProprietaryLocal.meta
