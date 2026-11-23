@@ -23,15 +23,21 @@ Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/T
 El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
 
 
-## Licencias diferenciadas
+## Licencias, derechos y créditos
 
-- **Código original:** licencia MIT (archivo LICENSE).
-- **Arte original de Cami:** modelos y otros recursos exportados pueden ser públicos **con crédito a su autora y derechos reservados**, únicamente después de su autorización por archivo. Los demás no adquieren un permiso general para reutilizarlos. Ver docs/ART_CREDITS.md y docs/LICENSING_POLICY.md.
-- **Archivos fuente del arte:** .blend y bocetos privados por defecto, salvo autorización expresa.
-- **Música externa:** piezas CC0 de OpenGameArt documentadas en docs/AUDIO_LICENSES.md y docs/AUDIO_IMPLEMENTATION.md, acreditadas por decisión del equipo.
+**GameMiners tiene licencias separadas según el recurso:**
 
-**Créditos y avisos:** [Créditos dentro del juego](docs/CREDITS_IN_GAME.md) · [Arte de Cami y derechos](docs/ART_CREDITS.md) · [Avisos de terceros](docs/THIRD_PARTY_NOTICES.md) · [Permiso artístico por aprobar](docs/ART_PERMISSION_DRAFT.md).
+| Recurso | Condición |
+| --- | --- |
+| Código C# original | **MIT** — [LICENSE](LICENSE), código open source |
+| Arte original de Cami | **© 2026 Cami. Todos los derechos reservados** — uso autorizado **solo para este proyecto**, [ART_LICENSE.md](ART_LICENSE.md) |
+| Exportaciones artísticas aprobadas | Pueden verse/descargarse del repo público **con créditos**, pero no se autoriza reutilización en otros proyectos |
+| Archivos fuente de Cami | Privados salvo autorización expresa |
+| Música y efectos externos | Su licencia individual (piezas elegidas **CC0**); [registro de audio](docs/AUDIO_LICENSES.md) |
+| Recursos de Unity y otras marcas/terceros | Condiciones de los titulares, [avisos de terceros](docs/THIRD_PARTY_NOTICES.md) |
 
-**Alcance:** código open source MIT, **no videojuego completo bajo MIT**. Los modelos exportados aprobados por Cami pueden ser públicos con derechos reservados; la posibilidad de clonar/ejecutar la fuente con ellos debe regularse expresamente o resolverse con placeholders.
+Cami comunicó al equipo que **pueden utilizar su arte únicamente en La heladería maldita**. Sus derechos no se ceden a GameMiners ni se extiende la licencia MIT al arte. Las autorizaciones de publicación de recursos concretos aparecen en los PR artísticos; [registro del alcance](docs/ART_USE_PERMISSION.md).
 
-La autorización de Cami para obras concretas y la compatibilidad del licenciamiento mixto con las bases de la hackatón siguen pendientes de confirmar.
+**Créditos:** [Pantalla del juego](docs/CREDITS_IN_GAME.md) · [Arte](docs/ART_CREDITS.md) · [Avisos de terceros](docs/THIRD_PARTY_NOTICES.md).
+
+**Nota:** el código es abierto, no todos los recursos visuales. Verificar las bases de la hackatón y posibles autorizaciones adicionales antes de una distribución comercial futura.
