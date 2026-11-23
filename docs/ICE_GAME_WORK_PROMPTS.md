@@ -1,0 +1,37 @@
+# GameMiners — Prompts iniciales por Work/Codex (heladería maldita)
+> Copiar solo el bloque de tu rol. **Leer antes** `AGENTS.md`, `docs/ICE_GAME_GDD.md` y `docs/ICE_GAME_IMPLEMENTATION.md`.
+> Repositorio: https://github.com/maturro0606q/gameminers-hackathon-2026
+> Estos son prompts para planificar y ejecutar el **hito M1** tras autorización. Nunca afirmar que Unity/Blender funcionan sin acceso real.
+
+## Matías — Product / UX / Integración
+```text
+Actúa como mi Work técnico para GameMiners. Lee AGENTS.md, docs/ICE_GAME_GDD.md y docs/ICE_GAME_IMPLEMENTATION.md del repo https://github.com/maturro0606q/gameminers-hackathon-2026; confirma que su diseño de heladería maldita es la propuesta actual y distingue el prototipo antiguo de 3 coleccionables. Soy Matías, responsable de arquitectura funcional, UI, coordinación e integración. Trabaja en feature/ui, sin editar las escenas/Gameplay de Nacho ni los assets/Art de Cami.
+
+Primero inspecciona el proyecto real y propón un contrato mínimo de eventos/estado con Nacho: fase, vida, progreso 23/10, boss HP, arma y bombas, e instrucciones E. No fabriques APIs de gameplay que aún no existen. Tras mi autorización, implementa solo tus prefabs y scripts de UI para M1: menú Jugar/Controles, prompts de interacción, retícula, vida, objetivo/oleada, pantalla de derrota, barra jefe, final y volver a menú. Usa datos simulados SOLO para previsualizar la UI, no como lógica productiva. Informa qué eventos requieren vinculación.
+
+Después de cada bloque, prueba lo que puedas, commit/push a tu rama y prepara PR sin fusionar main. Si no hay acceso local al editor, no simules pruebas. Ayúdame a integrar por etapas en una build que va de tienda a trono. No implementes funciones extra. Antes de escribir código, devuelve plan de archivos, contrato y dependencias y espera mi instrucción «implementar M1».
+```
+
+## Nacho — Gameplay e integración de escenas
+```text
+Actúa como mi Work para programar gameplay en Unity/Codex del mismo repo https://github.com/maturro0606q/gameminers-hackathon-2026. Lee AGENTS.md y docs/ICE_GAME_GDD.md + ICE_GAME_IMPLEMENTATION.md. Soy Nacho y trabajo solo en feature/gameplay, dueño de Assets/Gameplay y composición de escenas. No toques Assets/UI ni Assets/Art; conéctalos mediante contratos acordados.
+
+Tu prioridad es M1: una partida COMPLETA con placeholders desde menú/tienda, atender clientes, agotamiento, bodega/refrigerador con Jety, mundo de helados, 1 helado chico + 1 grande + 1 jefe, sala Jety, combate básico, final de trono y retorno al menú. Mantén el mismo controlador POV, una sola mecánica de ataque con cucharón y transiciones simples; no comiences aún la complejidad de 23+10, lanza, cofres o bombas. Esas funciones pertenecen a M2/M3.
+
+Antes de editar, inspecciona Unity y el repositorio, propone nombres/rutas de 4 escenas, estructuras mínimas de scripts y contrato de eventos para Matías, y presenta dependencias visuales a Cami. Usa Unity MCP solo si está conectado; confirma pruebas reales. Por tarea: commit/push a feature/gameplay, PR para revisión, sin merge directo. Si necesitas cambiar el contrato o UI, solicita coordinación. Entrega un recorrido funcional en incrementos con controles simples. Detente después del plan y espera mi autorización «implementar M1».
+```
+
+## Cami — Arte, Blender MCP y exportación Unity
+```text
+Actúa como mi Work 3D para GameMiners. Lee AGENTS.md, docs/ICE_GAME_GDD.md y docs/ICE_GAME_IMPLEMENTATION.md del repo https://github.com/maturro0606q/gameminers-hackathon-2026. Soy Cami; soy dueña de Assets/Art y trabajo en feature/art. Modelarás desde las fotos de mis dibujos directamente en Blender mediante el MCP conectado, no solo me explicarás cómo hacerlo, cuando tengas acceso real.
+
+El juego definitivo necesita tres variantes de helados enemigos (23 pequeños, 10 grandes, 1 jefe), un Jety jefe final, armas (cucharón, lanza de dulce, bombas de chicle), cofres y ambientación tienda/mundo/trono. Pero SOLO para el primer hito M1 debemos preparar un modelo mínimo que pruebe la integración, sin bloquear a Nacho mientras él usa proxies. No modeles todo ahora.
+
+Primero verifica acceso real a Blender MCP y repositorio; identifica versión, capacidad de guardar .blend y exportar FBX. Cuando te dé una imagen y autorice un recurso, modela low-poly fiel a la referencia, conserva cuerpo/cabello/ropa separados si es personaje, y crea rig/weight paint solo si necesita deformarse animado. Prueba poses, escalas, pivote y exportación; nunca declares válido un rig sin comprobación. Guarda fuente .blend en Assets/Art/.../Source y FBX en .../Models; sube commit/push a feature/art y prepara PR. No edites escenas ni gameplay. Confirma archivo, estado de rig, ruta y pruebas; espera mis referencias y autorización.
+```
+
+## Regla general de coordinación
+- El MVP es **recorrido completo** primero, **conteos 23 + 10** segundo, **armas/cofres** tercero, **pulido y opcionales** después.
+- Nadie mezcla PR sobre main sin revisión.
+- Si una integración requiere editar el archivo de otro, entregar requerimiento en vez de sobrescribirlo.
+- Repositorio/documentación no prueba funcionamiento: verificar que Unity importe, ejecute y compile.
