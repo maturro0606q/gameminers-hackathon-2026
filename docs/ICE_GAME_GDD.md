@@ -20,6 +20,12 @@ Juego de acción 3D estilizado con **dos modos de cámara** (POV en heladería y
 - **Alcance:** en M1 usar un controlador POV para la tienda y otro de combate en tercera persona para ambos niveles hostiles, con configuración de estado/transiciones compartida; no intentar convertir un único controlador FPS para ambos modos.
 - Ver [decisión técnica de cámaras](ICE_GAME_CAMERA_ARCHITECTURE.md).
 
+## 2.2. Referencias obligatorias de identidad del equipo
+
+Las cinco referencias acordadas por GameMiners son parte **obligatoria** del flujo del juego y deben colocarse antes del pulido visual: (1) «¡Queda una pura bola de helado!» al agotarse el inventario en la tienda; (2) un conejo guía al llegar a IceWorld dice «Oh, eres el heladero número 23 en venir aquí»; (3) letrero de la heladería con logo Codex oficial si está permitido su uso; (4) un conejo espectador sostiene un completo italiano en el fondo de la pelea; (5) el conejo guía tiene diseño ORIGINAL de títere expresivo, inspirado conceptualmente en la estética de *31 Minutos*, sin copiar personajes. Además se ambienta el campo de batalla con **conejos de público/protesta** que portan letreros «No más conos» y «No más humanos».
+
+La ubicación, permisos de marca, separación de tareas y checklist están en [HACKATHON_ELEMENTS.md](HACKATHON_ELEMENTS.md). No deben agregar escenas ni mecánicas nuevas para cumplir estos requisitos. En M1 se permiten proxies y texto; la sustitución por arte de Cami es posterior y no bloquea el recorrido completo.
+
 ## 3. Flujo narrativo y jugable
 
 ### 3.1 Menú principal
@@ -28,12 +34,13 @@ Pantalla con título, **Jugar**, **Controles**, **Salir** (Salir solo en build P
 ### 3.2 Tienda de helados (escena 01_Shop)
 - Vista POV de la protagonista detrás del mostrador.
 - Un cliente se acerca, aparece una indicación simple de servir y vender helado; interactuar con **E** (objetivo sugerido: atender 2 o 3 clientes; NO implementar dinero ni pedidos variados en la primera versión).
-- Se agota el stock y aparece «Se acabaron los helados. Busca más en la bodega».
+- Se agota el stock; aparece **«¡Queda una pura bola de helado!»**. A continuación se muestra «Busca más helados en la bodega». El aviso debe ocurrir antes de ir a buscar al refrigerador.
 - Se habilita la puerta de bodega; entrar, acercarse al refrigerador e interactuar con **E**.
 - El Jety aparece desde el refrigerador, efecto corto (animación simple, empuje de cámara o fundido), y transporta a la protagonista al mundo hostil.
 - Si la actuación del Jety demora, usar silueta/cara provisional y fundido: no bloquear la progresión por cinemática.
 
 ### 3.3 Nivel 1 — Mundo de helados (escena 02_IceWorld)
+- Al llegar, un **conejo guía original** (inspiración general en títeres tipo *31 Minutos*) recibe con «Oh, eres el heladero número 23 en venir aquí». El combate empieza tras esa presentación breve. El área muestra conejos espectadores con carteles «No más conos» y «No más humanos» y uno sostiene un completo italiano. Todos son ambientación sin IA ni combate en M1.
 - El jugador recibe como arma principal inicial un **cucharón de helados**, usado en ataques cuerpo a cuerpo tipo espada.
 - **Oleada 1:** derrotar **23 helados pequeños**. El contador muestra «Helados pequeños: X/23». Generar en grupos acotados (p. ej. 3–5) para mantener rendimiento y legibilidad; el número exacto de simultáneos se ajusta en pruebas.
 - **Oleada 2:** tras las 23 bajas, derrotar **10 helados grandes**. «Helados grandes: X/10».
