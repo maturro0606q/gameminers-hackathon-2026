@@ -26,6 +26,16 @@ La escena de menú se puede sustituir por bootstrap/panel si el proyecto actual 
 
 Ramas previstas (ya documentadas en el repo): `feature/ui`, `feature/gameplay`, `feature/art`. **Una persona por prefab/escena.** Integrar mediante PR a `main`, nunca copiar archivos manualmente a Unity.
 
+## 2.1 Elementos de identidad obligatorios (trabajo transversal)
+
+Ver [HACKATHON_ELEMENTS.md](HACKATHON_ELEMENTS.md) para especificación, responsables, derechos y criterios de aceptación. El equipo ha decidido incluir: «¡Queda una pura bola de helado!» (agotamiento en tienda); conejo guía con línea exacta «Oh, eres el heladero número 23 en venir aquí» (primera llegada a mundo helado); logo de Codex como letrero de heladería (sujeto a guía de marca); conejo espectador con completo italiano; conejo guía original con lenguaje visual de títeres inspirado conceptualmente en *31 Minutos*; y conejos protestantes en el fondo con «No más conos» y «No más humanos».
+
+- **Nacho** incorpora triggers de diálogo y distribución de props/NPC decorativos dentro de sus escenas, sin sistemas complejos.
+- **Matías** integra dos líneas de texto y créditos/indicaciones desde sus prefabs UI, usando el contrato existente sin tocar gameplay.
+- **Cami** diseña conejo guía, conejo ambiente (reutilizable), completo, pancartas y letrero; modelado original con sus créditos y archivos autorizados.
+
+**Primero placeholders + mensajes. Después assets.** Ninguna de estas referencias bloquea M1 si su arte aún está pendiente. El logo oficial de Codex se incorpora solo tras comprobar términos de marca aplicables, sin atribuir patrocinio.
+
 ## 3. Contrato entre gameplay y UI (acordar y congelar)
 Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola vez en ruta compartida:
 
@@ -57,14 +67,14 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 **Nacho**
 1. Configurar 4 escenas y navegación.
 2. Dos modos: jugador POV en tienda (WASD + mouse + E) y personaje visible en cámara lateral elevada / tres cuartos en niveles de combate (WASD relativo a cámara; sin free-look).
-3. Tienda: atender 2 clientes de forma simplificada, agotar stock, acceder bodega, abrir refrigerador.
+3. Tienda: atender 2 clientes de forma simplificada, agotar stock, presentar «¡Queda una pura bola de helado!», acceder bodega, abrir refrigerador. Cartel Codex en zona visible (placeholder hasta validación de marca).
 4. Portal por fundido/carga: transición visible y comprobable de POV a cámara tercera persona 3D semilateral al entrar en mundo de helados.
 5. Ataque principal simple, enemigos placeholders y vida.
-6. Oleada de prueba: 1 pequeño, 1 grande, 1 jefe helado.
+6. Conejo guía al entrar: «Oh, eres el heladero número 23 en venir aquí». Oleada de prueba: 1 pequeño, 1 grande, 1 jefe helado; conejos decorativos con carteles «No más conos» y «No más humanos» y uno con completo italiano (proxies hasta entrega de arte).
 7. Portal a sala del Jety, combate simple con boss placeholder.
 8. Cinemática mínima de trono y vuelta a menú.
 **Matías**: menú Jugar/Controles con instrucciones para **dos esquemas de cámara**, retícula/prompts de tienda y prompts contextuales de combate, HUD vida/progreso, boss HP, derrota, final y botones. Prefabs separados; ocultar retícula FPS en combate si no resulta útil.
-**Cami**: proxies artísticos o una referencia de helado y Jety; no bloquear M1 por rigs definitivos. Preparar modelo 3D de pequeño helado o prop según referencias. Planificar protagonista visible con rig apto para cámara de combate en tercera persona.
+**Cami**: proxies artísticos o una referencia de helado y Jety; no bloquear M1 por rigs definitivos. Preparar conejo guía de títere ORIGINAL y variantes de conejo decorativo cuando termine las prioridades del personaje y primer enemigo. Preparar modelo 3D de pequeño helado o prop según referencias. Planificar protagonista visible con rig apto para cámara de combate en tercera persona.
 **Criterio:** desde Jugar hasta final, sin usar editor para avanzar de escena; se puede perder/reintentar; al menos un recurso de Cami importado. Compilar versión PC de prueba. No declarar M1 completo si el final no funciona.
 
 ### M2 — Reglas originales de oleadas
@@ -106,7 +116,11 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 | --- | --- |
 | Menú Jugar | Inicia tienda |
 | Atender clientes | Stock llega a cero y permite ir bodega |
+| Agotar stock en tienda | Texto visible «¡Queda una pura bola de helado!» antes de entrar bodega |
+| Cartel heladería | Logo Codex visible, sujeto a política de marca verificada |
 | Refrigerador E | Jety aparece / transición desde POV tienda hacia vista externa lateral 3D |
+| Bienvenida conejo | Muestra «Oh, eres el heladero número 23 en venir aquí» antes de la oleada |
+| Fondo de combate | Conejo con completo italiano, conejos con «No más conos» y «No más humanos» visibles |
 | Cámaras por contexto | En tienda FPS con mouse; tras captura vista lateral elevada 3D con protagonista visible; cámara mantiene seguimiento en combate y sala Jety |
 | Mundo primera oleada | Cuenta exactamente 23 pequeños |
 | Mundo segunda oleada | Comienza tras 23, cuenta exactamente 10 |
