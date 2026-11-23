@@ -1,22 +1,31 @@
-# GameMiners — Créditos y derechos del arte
-> Aviso propuesto; completar con el crédito elegido y consentimiento de Cami antes de publicarlo como aviso definitivo.
+# GameMiners — Aviso de propiedad y créditos del arte
+> PROPUESTA · 23/11/2026 · Cami debe aprobar la redacción final y las obras cubiertas.
+> Este documento no es una cesión de derechos ni concede por sí solo autorización al equipo.
 
-## Arte original del juego
-**Diseño de personajes, ilustraciones, modelado 3D, rigs, texturas y dirección artística:** Cami — [nombre artístico o nombre de acreditación por confirmar].
+## Aviso que acompañaría a los assets aprobados
+**© 2026 Cami. Todos los derechos reservados.**
 
-**© 2026 [titular de los archivos artísticos: completar con Cami]. Todos los derechos reservados.**
+Arte original del videojuego **La heladería maldita**, desarrollado para GameMiners.
+Diseño de personajes, ilustraciones, modelos 3D, materiales y animaciones originales: **Cami**.
 
-Los archivos artísticos que la autora apruebe podrán hacerse públicos dentro del repositorio GameMiners. Su publicación permite que sean visibles y descargables, **pero no concede a terceros una licencia general para copiarlos, modificarlos, incorporarlos a otros videojuegos ni comercializarlos**. Para otros usos, deben obtener permiso de la titular.
+Los archivos artísticos que su autora autorice a publicar pueden verse y descargarse en el repositorio público, sujeto a las funcionalidades y condiciones de GitHub. **Su publicación y el crédito no constituyen una licencia abierta (MIT, CC0 o CC BY)** ni conceden permiso general para reutilizar, redistribuir separadamente, modificar o comercializar el arte en proyectos ajenos. Para otros usos, contactar a su titular.
 
-El código del proyecto tiene licencia MIT, que **no abarca** las obras artísticas que conserven este aviso.
+La licencia MIT de la raíz cubre el código original, no estos recursos de arte.
 
-## Autorización al equipo GameMiners
-Las condiciones específicas para integrar y distribuir estos recursos dentro del juego (incluida una versión compilada para la hackatón) se acordarán **con la titular** y no quedan concedidas automáticamente por este documento. Registrar la aprobación y el listado de obras cubiertas antes de subirlas.
+## Qué publica Cami
+Solo el inventario de exportaciones concretas que apruebe, como:
+- `Assets/Art/Characters/HeladoChico/HeladoChico.fbx` y sus materiales/texturas, una vez aprobado.
+- `Assets/Art/Characters/Protagonista/Protagonista.fbx` y sus materiales/texturas, una vez aprobado.
+- Otros diseños, jefes, armas y props, cada uno tras aprobación.
 
-## Qué se acredita en el juego
-- Pantalla Créditos (menú o final).
-- README con vínculo a este documento.
-- Aviso de autor en la entrega que corresponda.
+Los originales editables como archivos .blend, dibujos o archivos PSD **no se publican por defecto**.
 
-## ¿Quieren compartir el arte con reutilización permitida por atribución?
-Se requiere que Cami elija expresamente otra licencia, por ejemplo CC BY 4.0, que permite modificaciones y uso comercial por terceros con los créditos y condiciones legales correspondientes: https://creativecommons.org/licenses/by/4.0/
+## Permiso del equipo y del jurado: pendiente
+Para incorporar arte en builds, permitir pruebas por jueces y publicar el material de la hackatón, se requiere acuerdo de autorización no exclusiva de Cami con alcance, duración y forma de exhibición definidos. El borrador está en `ART_PERMISSION_DRAFT.md`. También deben decidir si se concede un permiso acotado al público para clonar, compilar y jugar al proyecto completo, o si se provee un build y placeholders de libre uso.
+
+## Créditos
+- Pantalla de Créditos desde el menú y después del trono: “Arte y dirección artística: Cami”.
+- README e inventario de derechos: nombre de acreditación “Cami”, pendiente de confirmar si desea otro.
+- Antes de un lanzamiento comercial, comprobar cadena de titularidad y permisos de terceros.
+
+No atribuir a Cami recursos que no haya creado, ni incluir marcas/logos de terceros dentro de la reserva de derechos de Cami.
