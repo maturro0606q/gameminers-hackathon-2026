@@ -7,7 +7,6 @@
 | **02_IceWorld (helados pequeños y grandes)** | **Magic Puzzle In-Game 1 / MintoDog — ELEGIDA** | **CC0** | **`magic_puzzle_in-game_1_bpm110.ogg`** | https://opengameart.org/content/magic-puzzle-in-game-1 |
 | 03_JetyRoom (jefe final) | **Boss Battle Music / SubspaceAudio (pista identificada como Juhani Junkala)** — **ELEGIDA POR EL EQUIPO** | CC0 | `Juhani Junkala - Epic Boss Battle [Seamlessly Looping].wav` (convertir a OGG si conviene, preservando original y licencia) | https://opengameart.org/content/boss-battle-music |
 | Secuestro (opcional) | Creepy Ambient Loop / epb9000 | CC0 | `creepyloop-v2.ogg` | https://opengameart.org/content/creepy-ambient-loop |
-
 | 03_JetyRoom (trono / final) | **Pendiente de elección** entre opciones cozy-inquietantes | CC0 propuesto | Sin archivo seleccionado | Ver MUSIC_SHORTLIST.md |
 
 La declaración CC0 proviene de los autores o páginas de distribución, no de GameMiners. Conservar copia de ficha/licencia y verificar metadatos/archivos antes de empaquetar.
