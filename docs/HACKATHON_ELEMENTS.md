@@ -7,7 +7,7 @@
 
 | ID | Elemento pedido | Momento exacto | Implementación mínima | Responsable de integrar | Responsable de arte | Prueba |
 |---|---|---|---|---|---|---|
-| H-01 | Frase **«Queda una pura...»** | Tienda, al agotarse el inventario, ANTES de entrar a la bodega | Mensaje obligatorio **«¡Queda una pura bola de helado!»** como diálogo/subtítulo; luego objetivo «Busca helados en la bodega». Evitar otro minijuego | Nacho activa evento al llegar al estado de falta de stock; Matías muestra UI | Matías UI; Cami opcional tipografía/fondo | Aparece una sola vez por partida después de atender clientes, antes del refrigerador |
+| H-01 | Frase **«Queda una pura...»** | Tienda, cuando queda **1 bola** de helado y ANTES de entrar a la bodega | Mensaje obligatorio **«¡Queda una pura bola de helado!»** cuando el stock baja a 1; al servir la última bola (stock = 0), objetivo «Busca helados en la bodega». Evitar otro minijuego | Nacho activa evento al llegar a stock = 1 y desbloquea bodega tras stock = 0; Matías muestra UI | Matías UI; Cami opcional tipografía/fondo | Aparece una sola vez cuando queda 1 bola; tras servirla, se agota el stock y se habilita la bodega |
 | H-02 | **Número 23** | Primer instante tras entrar a 02_IceWorld, antes de la primera oleada | Conejo guía/NPC dice exactamente **«Oh, eres el heladero número 23 en venir aquí»**, mediante globo/subtítulo visible; interacción o trigger automático breve, sin árbol de diálogo | Nacho trigger de llegada y desbloqueo tras diálogo; Matías globo/subtítulos | Cami conejo guía | La línea se muestra en el primer arribo y no se repite al reiniciar la oleada. No confundir con contador 23 enemigos |
 | H-03 | **Logo de Codex** | Heladería, visible al comenzar la partida | Letrero / rótulo de la tienda con logotipo Codex **oficial y sin alteraciones**, solo si su uso está permitido por bases y guía de marca; usar placeholder gráfico mientras se confirma. No implica patrocinio | Nacho coloca cartel en 01_Shop, Matías puede preparar señalización | Cami adapta cartel sin alterar marca oficial | La cámara POV deja verlo al menos una vez de forma clara al iniciar; uso de marca comprobado |
 | H-04 | **Completo italiano** | Fondo de zona de combate (02_IceWorld), durante al menos una pelea | Conejo espectador sostiene un prop de **completo italiano** (pan, vienesa, tomate, palta, mayonesa); no interactivo, sin mecánica de comida | Nacho ubica un prefab de decorado en fondo, visible a la cámara lateral elevada | Cami modelo low-poly del completo y conejo con pose | Se ve en segundo plano durante la pelea sin ocultar enemigos ni afectar rendimiento |
@@ -49,7 +49,7 @@
 4. Pulir subtítulos, perspectiva y lectura de carteles. Mantener NPC de fondo como decorado.
 
 ## 5. Checklist de aceptación de hackatón
-- [ ] En `01_Shop` se muestra textualmente «¡Queda una pura bola de helado!» cuando se acaba el stock.
+- [ ] En `01_Shop` se muestra textualmente «¡Queda una pura bola de helado!» cuando queda **1 bola**; luego se sirve la última y se habilita la bodega.
 - [ ] El cartel de Codex se ve al menos una vez en la heladería. Antes de usar el logotipo oficial, verificar permiso y directrices.
 - [ ] Tras el refrigerador, en `02_IceWorld`, un conejo recibe a la protagonista con «Oh, eres el heladero número 23 en venir aquí».
 - [ ] El conejo guía posee **diseño original con estética de títere** que remite conceptualmente a *31 Minutos* sin copiar personajes.
