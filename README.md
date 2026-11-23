@@ -10,14 +10,14 @@ Proyecto colaborativo del equipo GameMiners para la hackatón de videojuegos. La
 
 Tecnologías del equipo: Unity Hub y Unity Editor, C#, Git y GitHub, GitHub Desktop, Codex y Blender para recursos 3D. Git LFS se usará cuando el equipo acuerde incorporar binarios grandes.
 
-## Primeros pasos
+## Abrir el proyecto
 
 1. Lee [AGENTS.md](AGENTS.md) y [la guía de integración](docs/INTEGRATION.md).
-2. Antes de crear el proyecto, el equipo debe confirmar la versión exacta de Unity, incluidos parche y sufijo, y una plantilla compatible con los tres computadores. Matías registra ambos datos en [ARCHITECTURE.md](docs/ARCHITECTURE.md).
-3. Cuando se abra la preparación de Unity, Matías crea una única copia desde Unity Hub y publica la base real con `Assets/`, `Packages/`, `ProjectSettings/` y sus configuraciones. El editor exacto queda registrado también en `ProjectSettings/ProjectVersion.txt`.
-4. Tras publicar la base, cada integrante clona este repo en GitHub Desktop, instala la versión acordada y agrega el clon a Unity Hub. Para contribuir, acepta primero la invitación al repositorio. Cada rama personal debe partir del mismo commit de preparación.
-5. Desarrollo del prototipo pendiente de aprobación explícita de Matías.
+2. Instala **Unity 6000.4.11f1** desde Unity Hub. La base usa **Universal 3D (URP)** y la primera plataforma de prueba es **Windows x64**.
+3. Clona el repositorio y agrega la raíz del clon a Unity Hub con **Projects → Add → Add project from disk**. La versión exacta está en [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt).
+4. Abre `Assets/Scenes/SampleScene.unity` y entra en Play Mode para comprobar la instalación. Acepta la invitación al repositorio antes de publicar cambios y usa la rama asignada.
+5. Empieza el desarrollo cuando Matías confirme la validación de la base y autorice el hito correspondiente.
 
 Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/TASKS.md) y [pruebas](docs/TESTING.md).
 
-El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
+El código original se publica bajo [licencia MIT](LICENSE). La [plantilla de Unity](docs/UNITY_TEMPLATE_LICENSE.md) conserva su licencia de origen.

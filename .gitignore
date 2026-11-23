@@ -11,6 +11,7 @@
 /[Rr]ecordings/
 /.gradle/
 /.vs/
+/.vscode/
 /.idea/
 
 # Archivos generados por IDE y por el editor en la raíz
