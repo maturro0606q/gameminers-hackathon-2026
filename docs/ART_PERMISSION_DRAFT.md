@@ -1,37 +1,13 @@
-# GameMiners — Modelo de autorización de Cami (BORRADOR NO FIRMADO)
-> No se presume aprobación. Completar, revisar y aceptar expresamente antes de distribuir obras no autorizadas.
+# GameMiners — Historial de borrador de autorización artística
+> DOCUMENTO HISTÓRICO, **no vigente como acuerdo firmado**.
 
-## A. Partes y obras
-**Titular/autora:** [identificación privada de Cami]; **nombre de crédito público:** [Cami, o el que elija].  
-**Beneficiarios:** [integrantes identificados de GameMiners].  
-**Obras incluidas:** [lista exacta de rutas, archivos FBX, texturas, animaciones, ilustraciones, versiones y fechas; adjuntar anexo].  
-**Obras excluidas:** fuentes editables (.blend, .psd, bocetos) y cualquier obra no enumerada, salvo autorización adicional.
+El equipo cerró el alcance operativo mediante comunicación de Matías el 23/11/2026: **Cami permite utilizar su arte solo en este proyecto, La heladería maldita (GameMiners)**, manteniendo sus derechos y créditos.
 
-## B. Autorizaciones específicas que deben acordarse
-La autora **podría conceder**, mediante aceptación expresa, una **licencia de uso no exclusiva**, no una cesión de titularidad, para:
-1. Almacenar y publicar públicamente los archivos exportados del anexo en GitHub GameMiners.
-2. Integrarlos y hacer ajustes técnicos necesarios dentro del proyecto (escalado, rig, optimización, exportación y materiales).
-3. Mostrar el juego a jurado y asistentes en la hackatón; publicar capturas, clips y una build compilada para evaluación/promoción del proyecto, dentro de los límites acordados.
-4. [PENDIENTE] Permitir a terceros descargar, clonar y ejecutar el proyecto con su arte para fines personales/de evaluación, sin reutilizar esos assets por separado. Si no se concede, usar placeholders o distribuir solo builds al público autorizado.
-5. Reconocer a la autora en créditos visibles del juego y en el repositorio.
+La documentación vigente es:
+1. [ART_LICENSE.md](../ART_LICENSE.md) — aviso de copyright sobre los recursos originales.
+2. [ART_USE_PERMISSION.md](ART_USE_PERMISSION.md) — registro de la autorización comunicada y las entregas de arte.
+3. [ART_CREDITS.md](ART_CREDITS.md) — texto de atribución y condiciones de publicación.
 
-**Sin autorización expresa**, no se permiten sublicencias para incorporar sus modelos a otros videojuegos; ni apropiación de los originales por parte de GameMiners. Permisos necesarios para tiendas, hosting o distribuidores deben pactarse antes de publicar allí.
+No confundir esta comunicación con un contrato firmado ni utilizarla para afirmar permisos que no se discutieron: sublicencias generales, comercialización fuera del alcance acordado, arte reutilizado en otros proyectos o distribución comercial futura.
 
-## C. Condiciones aún por decidir
-- Duración de autorización: [___].
-- Territorio: [___].
-- Retribución o gratuidad: [___].
-- Publicación de builds, videos y contenido promocional: [___].
-- Uso comercial o explotación después de la hackatón: [___].
-- Derecho de revocación y tratamiento de versiones distribuidas: [___].
-- Identificación y crédito de las obras derivadas o colaborativas: [___].
-- Compatibilidad con el requisito open source de las bases: [___].
-
-## D. Confirmación
-La autora declara haber revisado obras, usos y límites efectivamente rellenados en este documento y decide: [acepta/no acepta] [modalidad y fecha].  
-**Evidencia de aceptación de la autora:** [documento firmado o consentimiento claro archivado por el equipo].  
-**Aceptación por GameMiners:** [persona y fecha].
-
-**Este archivo NO equivale a autorización ni concede derechos mientras esté incompleto y sin aceptación.**
-
-Como orientación jurídica general, una autorización de uso no equivale por sí misma a una transferencia de titularidad. Fuente: https://www.propiedadintelectual.gob.cl/faq
+Si después requieren acuerdo formal para tiendas, publishers o explotación comercial, completar un documento nuevo con consentimiento directo de Cami.
