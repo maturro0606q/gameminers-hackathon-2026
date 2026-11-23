@@ -1,17 +1,18 @@
-# Borrador de permiso de uso del arte de Cami — NO VINCULANTE
-> Texto solo para conversación. No constituye autorización ni contrato firmado.
+# GameMiners — autorización de arte (BORRADOR NO VINCULANTE)
 
-- Autora/titular: [nombre completo de Cami, pendiente].
-- Obras autorizadas: [inventario detallado, pendiente].
-- Usuarios autorizados: [integrantes/GameMiners, pendiente].
-- Usos potencialmente autorizables: adaptar técnicamente, riggear, exportar, incorporar al videojuego y mostrar durante la hackatón, compartir la build compilada con jueces y testers, publicar capturas promocionales si la autora lo acepta.
-- Archivos fuente (.blend, dibujos, PSD) y FBX privados: quedan fuera del repositorio público salvo permiso inequívoco y separado.
-- El código bajo MIT no implica licencia abierta sobre arte. Cami conserva los derechos que le correspondan.
-- Se debe acordar por escrito duración, territorio, retribución, posible distribución comercial futura, créditos, medios y límites de sublicencia antes de difundir el juego.
-- El permiso no debe darse por supuesto: Cami debe aprobar explícitamente su texto final.
+Este documento NO constituye consentimiento de Cami. Completarlo y obtener aprobación de la titular antes de subir cualquier archivo de su autoría.
 
-Firma/aceptación de la titular: [pendiente]
-Fecha: [pendiente]
-En nombre de GameMiners: [pendiente]
+- Autora y nombre de crédito: [por completar por Cami].
+- Equipo autorizado: [miembros identificados de GameMiners].
+- Archivos exportados autorizados para publicación pública en GitHub: [lista de rutas y versiones exactas].
+- Uso autorizado a GameMiners: incorporar, adaptar técnicamente e integrar al juego; distribuir el ejecutable para la hackatón según condiciones acordadas.
+- Titularidad: Cami conserva los derechos correspondientes; aviso «Todos los derechos reservados» y crédito dentro del juego.
+- No se concede licencia general a terceros para uso en otros proyectos por el hecho de que los archivos sean descargables.
+- Archivos fuente .blend, dibujos y PSD se conservan privados salvo aprobación específica.
+- Uso comercial futuro, plazo de autorización, territorio y otras condiciones: [por acordar].
+- Revisar si esta modalidad es compatible con el reglamento del evento.
 
-Solicitar asesoría jurídica antes de usos comerciales, controversias de titularidad o acuerdos duraderos.
+Firma o aprobación expresa de Cami: [PENDIENTE]
+Fecha: [PENDIENTE]
+
+Si Cami decide permitir a terceros reutilización con créditos, evaluar CC BY 4.0 mediante una decisión posterior y expresa, sabiendo que permite explotación comercial y adaptaciones.
