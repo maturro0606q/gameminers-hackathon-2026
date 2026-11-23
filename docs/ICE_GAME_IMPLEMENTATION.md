@@ -28,7 +28,7 @@ Ramas previstas (ya documentadas en el repo): `feature/ui`, `feature/gameplay`, 
 
 ## 2.1 Elementos de identidad obligatorios (trabajo transversal)
 
-Ver [HACKATHON_ELEMENTS.md](HACKATHON_ELEMENTS.md) para especificación, responsables, derechos y criterios de aceptación. El equipo ha decidido incluir: «¡Queda una pura bola de helado!» (agotamiento en tienda); conejo guía con línea exacta «Oh, eres el heladero número 23 en venir aquí» (primera llegada a mundo helado); logo de Codex como letrero de heladería (sujeto a guía de marca); conejo espectador con completo italiano; conejo guía original con lenguaje visual de títeres inspirado conceptualmente en *31 Minutos*; y conejos protestantes en el fondo con «No más conos» y «No más humanos».
+Ver [HACKATHON_ELEMENTS.md](HACKATHON_ELEMENTS.md) para especificación, responsables, derechos y criterios de aceptación. El equipo ha decidido incluir: «¡Queda una pura bola de helado!» (cuando queda 1 bola en tienda; después servir la última y habilitar bodega); conejo guía con línea exacta «Oh, eres el heladero número 23 en venir aquí» (primera llegada a mundo helado); logo de Codex como letrero de heladería (sujeto a guía de marca); conejo espectador con completo italiano; conejo guía original con lenguaje visual de títeres inspirado conceptualmente en *31 Minutos*; y conejos protestantes en el fondo con «No más conos» y «No más humanos».
 
 - **Nacho** incorpora triggers de diálogo y distribución de props/NPC decorativos dentro de sus escenas, sin sistemas complejos.
 - **Matías** integra dos líneas de texto y créditos/indicaciones desde sus prefabs UI, usando el contrato existente sin tocar gameplay.
@@ -67,7 +67,7 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 **Nacho**
 1. Configurar 4 escenas y navegación.
 2. Dos modos: jugador POV en tienda (WASD + mouse + E) y personaje visible en cámara lateral elevada / tres cuartos en niveles de combate (WASD relativo a cámara; sin free-look).
-3. Tienda: atender 2 clientes de forma simplificada, agotar stock, presentar «¡Queda una pura bola de helado!», acceder bodega, abrir refrigerador. Cartel Codex en zona visible (placeholder hasta validación de marca).
+3. Tienda: atender 2 clientes de forma simplificada, presentar «¡Queda una pura bola de helado!» cuando queda 1 bola, servirla, agotar stock, acceder bodega, abrir refrigerador. Cartel Codex en zona visible (placeholder hasta validación de marca).
 4. Portal por fundido/carga: transición visible y comprobable de POV a cámara tercera persona 3D semilateral al entrar en mundo de helados.
 5. Ataque principal simple, enemigos placeholders y vida.
 6. Conejo guía al entrar: «Oh, eres el heladero número 23 en venir aquí». Oleada de prueba: 1 pequeño, 1 grande, 1 jefe helado; conejos decorativos con carteles «No más conos» y «No más humanos» y uno con completo italiano (proxies hasta entrega de arte).
@@ -116,7 +116,7 @@ Para no tocar archivos del otro, fijar un adaptador pequeño, creado una sola ve
 | --- | --- |
 | Menú Jugar | Inicia tienda |
 | Atender clientes | Stock llega a cero y permite ir bodega |
-| Agotar stock en tienda | Texto visible «¡Queda una pura bola de helado!» antes de entrar bodega |
+| Queda una bola en tienda | Texto «¡Queda una pura bola de helado!»; tras última venta stock=0 y se habilita bodega |
 | Cartel heladería | Logo Codex visible, sujeto a política de marca verificada |
 | Refrigerador E | Jety aparece / transición desde POV tienda hacia vista externa lateral 3D |
 | Bienvenida conejo | Muestra «Oh, eres el heladero número 23 en venir aquí» antes de la oleada |
