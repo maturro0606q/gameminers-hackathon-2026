@@ -23,3 +23,9 @@ Formato de commits:
 - `fix: corregir integración`
 
 Consulta [la arquitectura](docs/ARCHITECTURE.md) para las rutas de trabajo y [la guía de integración](docs/INTEGRATION.md) para la revisión de cambios.
+
+## Derechos de autor y arte original (propuesta pendiente de aprobación)
+- El repositorio público distribuye código original bajo MIT. **MIT no se aplica al arte original propietario de Cami** ni cambia licencias de música/terceros.
+- **Prohibido subir archivos privados de arte original a cualquier rama o PR público** (incluye .blend, .fbx, ilustraciones, texturas y sus versiones). Cami debe autorizar expresamente cualquier excepción de publicación.
+- Usar placeholders redistribuibles en las escenas/prefabs que queden públicos, evitando referencias obligatorias a archivos privados. Para build con arte de Cami, obtener permiso específico de uso y distribución.
+- Todo audio de terceros requiere autor, fuente, licencia y crédito cuando corresponda, antes de importarlo o subirlo. Ver docs/LICENSING_POLICY.md y docs/MUSIC_SHORTLIST.md.
