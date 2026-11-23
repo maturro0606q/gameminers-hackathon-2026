@@ -2,15 +2,23 @@
 > Diseño v0.1 | 23-11-2026 | **PROPUESTA PARA REVISIÓN DEL EQUIPO** | Nombre provisional.
 
 ## 1. Visión
-Juego de acción 3D estilizado, en primera persona, con humor absurdo y giro de fantasía oscura. Una vendedora atiende una heladería, agota existencias, busca reposición en la bodega y abre un refrigerador del que sale un **Jety** que la secuestra hacia un mundo de monstruos de comida. Supera el mundo de helados y la sala del Jety. Cuando vence, en vez de escapar, se sienta en su trono y exhibe su cabeza en una lanza de forma estilizada y sin gore. El recorrido la transformó. **El final es parte obligatoria de la primera versión jugable**.
+Juego de acción 3D estilizado con **dos modos de cámara** (POV en heladería y tercera persona lateral elevada / tres cuartos en el mundo del Jety), con humor absurdo y giro de fantasía oscura. Una vendedora atiende una heladería, agota existencias, busca reposición en la bodega y abre un refrigerador del que sale un **Jety** que la secuestra hacia un mundo de monstruos de comida. Supera el mundo de helados y la sala del Jety. Cuando vence, en vez de escapar, se sienta en su trono y exhibe su cabeza en una lanza de forma estilizada y sin gore. El recorrido la transformó. **El final es parte obligatoria de la primera versión jugable**.
 
 ## 2. Principios de diseño
 1. **Primero flujo entero**: menú → tienda → bodega/refrigerador → mundo de helados → Jety → trono.
 2. Probar un recorrido de extremo a extremo con proxies antes de arte, números de oleadas o armas complejas.
 3. Una sola persona controla la **composición de las escenas** (Nacho); UI y arte se integran como prefabs y assets independientes.
-4. Una sola cámara de juego de **primera persona** para intro y combate (decisión de trabajo revisable por equipo). La secuencia final puede usar cámara cinematográfica.
+4. **Dos modos de juego diferenciados:** tienda + bodega en primera persona (POV); tras la captura en el refrigerador, mundo de helados y sala del Jety en **tercera persona, con cámara lateral elevada / semilateral 3D**, siguiendo como referencia visual *Fairytale Fights* (2009). No confundir con un plataformas 2D estrictamente plano. La secuencia final puede usar cámara cinematográfica.
 5. Evitar sistemas no esenciales: multijugador, mundo abierto, guardado, árboles de habilidades, economía, diálogos, animaciones complejas, procedural y enemigos muy sofisticados.
 6. Mantener compilable, probada y jugable la rama main después de cada integración.
+
+### 2.1. Perspectiva y transición obligatorias
+- **Heladería/bodega (01_Shop):** primera persona real, manos/herramientas o retícula si son necesarias. El jugador mira con el mouse y usa E para interactuar.
+- **Captura en el refrigerador:** fundido o cinemática breve; la **cámara cambia al cargar 02_IceWorld**, no mediante un giro continuo mientras se combate.
+- **Mundo de helados (02_IceWorld) y sala del Jety (03_JetyRoom):** protagonista visible en pantalla, cámara 3D **lateral elevada / en tres cuartos**, seguimiento suave y encuadre legible de enemigos (referencia: *Fairytale Fights*, no cámara FPS ni cámara libre con mouse). Movimiento sobre suelo 3D con dirección relativa a la cámara; ejes, restricciones de profundidad y ángulo exactos se validan con un prototipo visual.
+- **Final del trono:** se admite cámara cinematográfica al terminar el combate.
+- **Alcance:** en M1 usar un controlador POV para la tienda y otro de combate en tercera persona para ambos niveles hostiles, con configuración de estado/transiciones compartida; no intentar convertir un único controlador FPS para ambos modos.
+- Ver [decisión técnica de cámaras](ICE_GAME_CAMERA_ARCHITECTURE.md).
 
 ## 3. Flujo narrativo y jugable
 
@@ -47,7 +55,7 @@ Solamente si el flujo completo está estable, se cumplieron oleadas, armas, arte
 | Pantalla/estado | Elementos mínimos | Acción |
 | --- | --- | --- |
 | Menú principal | Logo/título, Jugar, Controles, Salir PC | Jugar inicia tienda |
-| Controles (overlay) | WASD mover, mouse mirar, E interactuar/recoger, clic izq atacar, clic der/tecla Q bomba (por acordar), Esc pausa | Volver |
+| Controles (overlay) | Heladería: WASD + mouse para mirar, E interactuar. Mundo Jety: WASD relativo a la cámara lateral (sin mirar con mouse), E recoger/abrir, clic izq atacar, Q bomba (pendiente de prueba), Esc pausa | Volver |
 | Tienda POV | Retícula central, instrucción «E: servir», contador de existencias o ventas simples | Atender, luego ir a bodega |
 | Bodega | Retícula, «E: abrir refrigerador» | Dispara transición |
 | Transición de portal | Fundido/mensaje breve | Carga mundo de helados |
@@ -64,9 +72,9 @@ Solamente si el flujo completo está estable, se cumplieron oleadas, armas, arte
 ## 5. Combate — especificación inicial
 
 ### Jugador
-- Movimiento WASD, vista mouse, clic izquierdo ataque; E interactuar/recoger.
+- En tienda: WASD + mirar con mouse + E interactuar. En combate: WASD relativo a la cámara 3D lateral/elevada, sin free-look de mouse, clic izquierdo atacar, E interactuar/recoger. La dirección del ataque depende de orientación del personaje, no del cursor.
 - Vida visible y daño con invulnerabilidad breve o temporizador de golpes para evitar múltiples colisiones instantáneas.
-- El mismo controlador de jugador para tienda y combates; activar/desactivar combate según fase.
+- Dos controladores de movimiento/cámara por contexto: POV de tienda y personaje visible de combate lateral 3D. Compartir solo el estado relevante (vida/equipamiento/progresión cuando corresponda); no forzar un controlador FPS único.
 - Derrota reintenta nivel; conservar progreso de oleadas o reiniciar desde el comienzo del nivel **pendiente de acuerdo**. Sugerencia MVP: reiniciar fase actual o checkpoint de jefe sin guardado permanente.
 
 ### Arma principal: cucharón
@@ -131,7 +139,7 @@ Orden de recorte ante retrasos: quitar nivel intermedio → enemigos extra final
 
 ## 10. Decisiones que el equipo debe cerrar antes de implementar
 1. Versión exacta Unity y plantilla 3D del repositorio (no inventar).
-2. Confirmar cámara POV durante todo el juego (sugerida) y controles definitivos.
+2. **Confirmado por el equipo:** POV en tienda/bodega y cámara lateral elevada/3-4 en el mundo del Jety (referencia *Fairytale Fights*). Pendiente de validar ángulo, seguimiento y movimiento en profundidad mediante prueba corta en Unity.
 3. ¿Cuántos clientes sirven al inicio? sugerencia 2.
 4. Diseño mínimo de Jety y del jefe helado (Cami puede entregar referencias posteriormente).
 5. ¿Reinicio desde nivel, oleada o checkpoint? sugerencia nivel/checkpoint.
