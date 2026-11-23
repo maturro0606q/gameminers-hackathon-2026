@@ -9,8 +9,27 @@ namespace GameMiners.UI
         [SerializeField] private Button menuButton;
         [SerializeField] private Button retryButton;
 
+        [SerializeField] private Button creditsButton;
+
         public Button MenuButton => menuButton;
+        public Button CreditsButton => creditsButton;
         public Button RetryButton => retryButton;
+
+        public void ApplyArtwork(UiArtwork artwork, Sprite background)
+        {
+            UiArtwork.SetBackground(GetComponent<Image>(), background);
+            if (retryButton != null)
+            {
+                artwork.PrimaryButton.Apply(retryButton);
+                artwork.SecondaryButton.Apply(menuButton);
+            }
+            else
+            {
+                artwork.PrimaryButton.Apply(menuButton);
+            }
+
+            artwork.SecondaryButton.Apply(creditsButton);
+        }
 
         public void Show()
         {

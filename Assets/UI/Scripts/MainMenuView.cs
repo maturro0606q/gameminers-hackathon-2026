@@ -13,7 +13,10 @@ namespace GameMiners.UI
         [SerializeField] private Button backButton;
         [SerializeField] private Button quitButton;
 
+        [SerializeField] private Button creditsButton;
+
         public Button PlayButton => playButton;
+        public Button CreditsButton => creditsButton;
 
         private void Awake()
         {
@@ -27,6 +30,23 @@ namespace GameMiners.UI
         private void OnEnable()
         {
             ShowMain();
+        }
+
+        public void ApplyArtwork(UiArtwork artwork)
+        {
+            UiArtwork.SetBackground(mainPanel.GetComponent<Image>(), artwork.MenuBackground);
+            UiArtwork.SetBackground(controlsPanel.GetComponent<Image>(), artwork.ControlsBackground);
+            artwork.PrimaryButton.Apply(playButton);
+            artwork.SecondaryButton.Apply(controlsButton);
+            artwork.SecondaryButton.Apply(creditsButton);
+            artwork.SecondaryButton.Apply(quitButton);
+            artwork.PrimaryButton.Apply(backButton);
+        }
+
+        public void ReturnFromControls()
+        {
+            if (controlsPanel.activeSelf)
+                ShowMain();
         }
 
         private void ShowMain()
