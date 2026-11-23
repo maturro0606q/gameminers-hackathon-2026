@@ -22,7 +22,7 @@ Juego de acción 3D estilizado con **dos modos de cámara** (POV en heladería y
 
 ## 2.2. Referencias obligatorias de identidad del equipo
 
-Las cinco referencias acordadas por GameMiners son parte **obligatoria** del flujo del juego y deben colocarse antes del pulido visual: (1) «¡Queda una pura bola de helado!» al agotarse el inventario en la tienda; (2) un conejo guía al llegar a IceWorld dice «Oh, eres el heladero número 23 en venir aquí»; (3) letrero de la heladería con logo Codex oficial si está permitido su uso; (4) un conejo espectador sostiene un completo italiano en el fondo de la pelea; (5) el conejo guía tiene diseño ORIGINAL de títere expresivo, inspirado conceptualmente en la estética de *31 Minutos*, sin copiar personajes. Además se ambienta el campo de batalla con **conejos de público/protesta** que portan letreros «No más conos» y «No más humanos».
+Las cinco referencias acordadas por GameMiners son parte **obligatoria** del flujo del juego y deben colocarse antes del pulido visual: (1) «¡Queda una pura bola de helado!» al quedar una sola bola de helado en la tienda, antes del último servicio; (2) un conejo guía al llegar a IceWorld dice «Oh, eres el heladero número 23 en venir aquí»; (3) letrero de la heladería con logo Codex oficial si está permitido su uso; (4) un conejo espectador sostiene un completo italiano en el fondo de la pelea; (5) el conejo guía tiene diseño ORIGINAL de títere expresivo, inspirado conceptualmente en la estética de *31 Minutos*, sin copiar personajes. Además se ambienta el campo de batalla con **conejos de público/protesta** que portan letreros «No más conos» y «No más humanos».
 
 La ubicación, permisos de marca, separación de tareas y checklist están en [HACKATHON_ELEMENTS.md](HACKATHON_ELEMENTS.md). No deben agregar escenas ni mecánicas nuevas para cumplir estos requisitos. En M1 se permiten proxies y texto; la sustitución por arte de Cami es posterior y no bloquea el recorrido completo.
 
@@ -34,7 +34,7 @@ Pantalla con título, **Jugar**, **Controles**, **Salir** (Salir solo en build P
 ### 3.2 Tienda de helados (escena 01_Shop)
 - Vista POV de la protagonista detrás del mostrador.
 - Un cliente se acerca, aparece una indicación simple de servir y vender helado; interactuar con **E** (objetivo sugerido: atender 2 o 3 clientes; NO implementar dinero ni pedidos variados en la primera versión).
-- Se agota el stock; aparece **«¡Queda una pura bola de helado!»**. A continuación se muestra «Busca más helados en la bodega». El aviso debe ocurrir antes de ir a buscar al refrigerador.
+- Cuando el stock llega a **1**, aparece **«¡Queda una pura bola de helado!»**. Se sirve la última bola, stock pasa a 0, y entonces se muestra «Busca más helados en la bodega». El aviso debe ocurrir antes de ir a buscar al refrigerador.
 - Se habilita la puerta de bodega; entrar, acercarse al refrigerador e interactuar con **E**.
 - El Jety aparece desde el refrigerador, efecto corto (animación simple, empuje de cámara o fundido), y transporta a la protagonista al mundo hostil.
 - Si la actuación del Jety demora, usar silueta/cara provisional y fundido: no bloquear la progresión por cinemática.
