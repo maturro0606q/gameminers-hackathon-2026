@@ -12,6 +12,10 @@
 | Jety alternativa orquestal | The Final Battle | skrjablin | CC0 | https://opengameart.org/content/the-final-battle |
 | Final oscuro | Retro Tunes: Eerie Choir | TheFrenchDodo | CC0 | https://opengameart.org/content/retro-tunes |
 
+## Estado de incorporación
+
+Pistas principales seleccionadas para preparar: **Ice Cream Truck Theme**, **Fairy Battles** y **Hard Boss Battle 1**. Los binarios de audio todavía no están incorporados al proyecto; consultar docs/AUDIO_IMPLEMENTATION.md y docs/AUDIO_LICENSES.md.
+
 ## Concepto de audio
 Contraste narrativo: tienda dulce → silencio/ambiente inquietante al abrir la nevera → combate juguetón pero extraño → Jety amenazante → trono inquietante. La primera build necesita solo 3 pistas: tienda, mundo de helados y Jety. En la transición usar brevemente silencio/ambiente. Los temas extra se añaden solo tras recorrido completo.
 
