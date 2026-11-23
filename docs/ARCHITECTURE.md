@@ -1,5 +1,20 @@
 # Arquitectura y propiedad
 
+## Decisión transversal del juego definitivo — cámaras (23-11-2026)
+
+La prueba técnica antigua de 3 coleccionables descrita más abajo **no define** los controladores del juego definitivo. El acuerdo de equipo para `La heladería maldita` es:
+
+- **Tienda y bodega (escena 01_Shop):** cámara subjetiva en **primera persona (POV)** con control del mouse.
+- **Después de que el Jety captura al jugador en el refrigerador:** transición a escena 02_IceWorld con cámara en **tercera persona lateral elevada / tres cuartos, 3D**, semejante a la presentación de *Fairytale Fights* (2009), con personaje visible y seguimiento sin control libre de cámara. Esta cámara se mantiene en la sala del Jety (03_JetyRoom).
+- **No confundir con un juego de plataformas 2D plano:** el movimiento conserva profundidad 3D relativa a la cámara, por validar con un prototipo.
+- **Final:** puede cambiar a un plano cinematográfico cuando la protagonista se sienta en el trono.
+- **Implementación:** Nacho controla cámaras, movimientos y escenas dentro de Gameplay; Matías solo UI, instrucciones contextuales y contratos acordados; Cami debe entregar protagonista y enemigos legibles desde vista lateral/3-4.
+- **No reutilizar a la fuerza el mismo FPS controller para ambos modos**; compartir el estado y cambiar de rig/controlador al cargar el nivel. No alterar contratos compartidos sin acuerdo.
+
+Referencias: [GDD del juego](ICE_GAME_GDD.md), [plan](ICE_GAME_IMPLEMENTATION.md), [decisión detallada de cámaras](ICE_GAME_CAMERA_ARCHITECTURE.md).
+
+---
+
 ## Proyecto base
 
 - **Editor exacto:** por confirmar con los tres computadores. Registrar la versión completa, incluido el sufijo, y verificar `ProjectSettings/ProjectVersion.txt`.
