@@ -46,3 +46,7 @@ Thumbs.db
 # IMPORTANTE: ignore no elimina archivos ya versionados ni protege contra git add -f.
 /Assets/Art/ProprietaryLocal/
 /Assets/Art/ProprietaryLocal.meta
+
+# Arte fuente local aún privado; solo exports aprobados se versionan.
+/Assets/Art/PrivateSource/
+/Assets/Art/PrivateSource.meta
