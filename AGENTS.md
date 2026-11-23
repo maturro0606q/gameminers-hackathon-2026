@@ -24,10 +24,11 @@ Formato de commits:
 
 Consulta [la arquitectura](docs/ARCHITECTURE.md) para las rutas de trabajo y [la guía de integración](docs/INTEGRATION.md) para la revisión de cambios.
 
-## Derechos de autor y material audiovisual
-
-- MIT aplica al código propio, no al arte original de Cami ni a música de terceros.
-- Arte público **únicamente con autorización específica de Cami**. El archivo artístico aprobado se publica con crédito y derechos reservados; publicar no equivale a CC BY ni a permiso de reutilización comercial de terceros.
-- No subir originales .blend, dibujos ni otros fuentes editables salvo que Cami los autorice individualmente. Modelos FBX exportados y texturas aprobadas podrán incluirse en la rama feature/art y en main tras revisión.
-- Incluir créditos artísticos en juego y README, con el nombre de acreditación elegido por Cami.
-- Música CC0: verificar origen, autor y licencia de cada archivo; registrar en docs/AUDIO_LICENSES.md y trabajar en rama propia antes de pedir a Nacho cambios de escenas. Ver docs/AUDIO_IMPLEMENTATION.md.
+## Licencias y política artística de GameMiners
+- **Código propio MIT**, texto estándar `LICENSE`. No extenderlo a arte de Cami, audio CC0 u otros materiales.
+- **Permiso de Cami comunicado al equipo:** su arte **puede utilizarse únicamente para este videojuego**, La heladería maldita/GameMiners; autoría y créditos reservados a Cami. Véase `ART_LICENSE.md` y `docs/ART_USE_PERMISSION.md`.
+- Exportaciones artísticas de este proyecto que la autora autorizó pueden subirse públicamente con créditos. No publicar .blend, bocetos ni otros fuentes editables sin autorización expresa.
+- **Nunca** reutilizar modelos en otros proyectos, convertirlos a CC BY/CC0/MIT, sublicenciarlos a terceros o afirmar derechos comerciales futuros sobre ellos.
+- La UI de créditos debe atribuir a Cami los modelos, personajes y animaciones originales de su autoría.
+- Música de terceros: verificar CC0 de cada archivo, guardar procedencia y acreditar creadores (política voluntaria). `docs/AUDIO_LICENSES.md`.
+- El logo de Codex tiene reglas propias de marca; no integrarlo como marca de heladería sin validar permiso conforme a https://openai.com/brand/.
