@@ -2,6 +2,22 @@
 
 Proyecto colaborativo del equipo GameMiners para la hackatón de videojuegos. La primera entrega será una prueba técnica para integrar el trabajo de tres computadores en un mismo proyecto Unity, ejecutarlo en el editor y generar una versión jugable.
 
+## La Heladería Maldita en acción
+
+Una partida empieza atendiendo pedidos en la heladería y termina enfrentando a los jefes del mundo de los helados.
+
+![Nico pide helado de vainilla](docs/capturas/01-nico-pide-vainilla.jpg)
+
+![Codex, empleado del mes](docs/capturas/02-codex-empleado-del-mes.jpg)
+
+![El conejo rojo en el Huerto de Cerezas](docs/capturas/03-conejo-rojo.jpg)
+
+![Heladitos con escudos de galleta](docs/capturas/04-heladitos-con-escudos.jpg)
+
+![Combate contra el Helado gigante](docs/capturas/05-helado-gigante.jpg)
+
+![Combate contra el Yeti](docs/capturas/06-combate-con-el-yeti.jpg)
+
 | Integrante | Responsabilidad | Rama |
 | --- | --- | --- |
 | Matías | Coordinación, arquitectura funcional, UX/UI, repositorio e integración | `feature/ui` |
