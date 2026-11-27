@@ -1,6 +1,13 @@
-# GameMiners · Hackatón 2026
+# La Heladería Maldita
 
-Proyecto colaborativo del equipo GameMiners para la hackatón de videojuegos. La primera entrega será una prueba técnica para integrar el trabajo de tres computadores en un mismo proyecto Unity, ejecutarlo en el editor y generar una versión jugable.
+Un juego de GameMiners para la Hackatón Codex Chile 2026.
+
+## Jugar en Windows
+
+1. Abre [GitHub Releases](https://github.com/maturro0606q/gameminers-hackathon-2026/releases) y descarga `La_Heladeria_Maldita_Creditos_Windows.zip` desde **Assets**.
+2. Extrae la carpeta completa y abre `GameMiners.exe`. Mantén `GameMiners_Data` junto al ejecutable. Puedes jugar sin instalar Unity.
+
+Usa **WASD** para moverte, **E** para interactuar y **F11** para cambiar a pantalla completa. Consulta [los controles completos y los créditos de la entrega](docs/ENTREGA_WINDOWS.md).
 
 ## La Heladería Maldita en acción
 
@@ -26,14 +33,14 @@ Una partida empieza atendiendo pedidos en la heladería y termina enfrentando a 
 
 Tecnologías del equipo: Unity Hub y Unity Editor, C#, Git y GitHub, GitHub Desktop, Codex y Blender para recursos 3D. Git LFS se usará cuando el equipo acuerde incorporar binarios grandes.
 
-## Primeros pasos
+## Abrir el proyecto en Unity
 
-1. Lee [AGENTS.md](AGENTS.md) y [la guía de integración](docs/INTEGRATION.md).
-2. Antes de crear el proyecto, el equipo debe confirmar la versión exacta de Unity, incluidos parche y sufijo, y una plantilla compatible con los tres computadores. Matías registra ambos datos en [ARCHITECTURE.md](docs/ARCHITECTURE.md).
-3. Cuando se abra la preparación de Unity, Matías crea una única copia desde Unity Hub y publica la base real con `Assets/`, `Packages/`, `ProjectSettings/` y sus configuraciones. El editor exacto queda registrado también en `ProjectSettings/ProjectVersion.txt`.
-4. Tras publicar la base, cada integrante clona este repo en GitHub Desktop, instala la versión acordada y agrega el clon a Unity Hub. Para contribuir, acepta primero la invitación al repositorio. Cada rama personal debe partir del mismo commit de preparación.
-5. Desarrollo del prototipo pendiente de aprobación explícita de Matías.
+1. En Unity Hub, instala la versión indicada en [ProjectVersion.txt](ProjectSettings/ProjectVersion.txt) con soporte de compilación para Windows y agrega la raíz del clon.
+2. Abre `Assets/Gameplay/Scenes/00_Menu.unity` y pulsa Play.
+3. Para compilar desde el editor, usa **GameMiners → Compilar Heladería Maldita para Windows**. La carpeta de salida es `Builds/Heladeria-Maldita`.
+
+Para contribuir, lee [AGENTS.md](AGENTS.md) y [la guía de integración](docs/INTEGRATION.md).
 
 Para seguir el trabajo, consulta [diseño](docs/GAME_DESIGN.md), [tareas](docs/TASKS.md) y [pruebas](docs/TESTING.md).
 
-El código original se publica bajo [licencia MIT](LICENSE). Los recursos de terceros conservan las condiciones de su licencia correspondiente.
+El código original se publica bajo [licencia MIT](LICENSE). El [arte original de Cami](ART_LICENSE.md) y los [recursos de terceros](docs/THIRD_PARTY_NOTICES.md) conservan las condiciones de sus respectivas licencias.
